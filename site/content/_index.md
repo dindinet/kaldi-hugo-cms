@@ -25,8 +25,8 @@ products:
       natural feedback. Your body will not be pushed beyond what you can safely
       enjoy.
 productscta:
-  btnhref: "/products"
-  btntext: "More About Massage Sessions"
+  btnhref: /products
+  btntext: Massage Session Full Details
 values:
   heading: Our values
   text: >-
