@@ -11,10 +11,9 @@ blurb:
 intro:
   heading: You Can Benefit from Thai Yoga Massage
   text: >-
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone.
+    Thai Yoga Massage has a long history and only requires the human touch of
+    your practitioner and a willingness to put your trust in their skill and
+    knowledge
 products:
   - image: /img/thai-massage.jpg
     text: >-
