@@ -1,16 +1,16 @@
 ---
-title: Great coffee with a conscience almost
-subtitle: Support sustainable farming while enjoying a cup
-image: /img/about-direct-sourcing.jpg
+title: Thai Yoga Massage
+subtitle: The benefits of yoga with out the years of training
+image: /img/thai-massage.jpg
 blurb:
-  heading: Why Kaldi?
+  heading: Why Thai Yoga Massage?
   text: >-
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
 intro:
-  heading: What we offer
+  heading: You Can Benefit from Thai Yoga Massage
   text: >-
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
     java’s origin and support the farmers that grew it. We take coffee
