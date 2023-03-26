@@ -1,14 +1,13 @@
 ---
 title: Thai Yoga Massage
-subtitle: The benefits of yoga with out the years of training
-image: /img/thai-massage.jpg
+subtitle: The benefits of yoga without the years of training
+image: /img/deeptissuemassage.jpg
 blurb:
   heading: Why Thai Yoga Massage?
   text: >-
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Just let your Thai Yoga Massage practitioner slowly stretch and manipulate
+    your whole body. At the end you will feel the same as if you had completed a
+    yoga class. All the benefits without the effort.
 intro:
   heading: You Can Benefit from Thai Yoga Massage
   text: >-
@@ -17,19 +16,13 @@ intro:
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone.
 products:
-  - image: img/illustrations-coffee.svg
+  - image: /img/thai-massage.jpg
+    text: To have a full body Massage expect your session to last for 90  minutes
+  - image: /img/thai-yoga-massage.jpg
     text: >-
-      We sell green and roasted coffee beans that are sourced directly from
-      independent farmers and farm cooperatives. We’re proud to offer a variety
-      of coffee beans grown with great care for the environment and local
-      communities. Check our post or contact us directly for current
-      availability.
-  - image: /img/illustrations-coffee-gear.svg
-    text: >-
-      We offer a small, but carefully curated selection of brewing gear and
-      tools for every taste and experience level. No matter if you roast your
-      own beans or just bought your first french press, you’ll find a gadget to
-      fall in love with in our shop.
+      The skilled practitioner works in unison with your body, reacting to the
+      natural feedback. You should not be pushed beyond what your body can
+      safely accept.
 values:
   heading: Our values
   text: >-
