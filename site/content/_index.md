@@ -9,7 +9,7 @@ blurb:
     your whole body. At the end you will feel the same as if you had completed a
     yoga class. All the benefits without the effort.
 intro:
-  heading: You Can Benefit from Thai Yoga Massage
+  heading: Everyone Can Benefit from Thai Yoga Massage
   text: >-
     Thai Yoga Massage has a long history and only requires the human touch of
     your practitioner and a willingness to put your trust in their skill and
