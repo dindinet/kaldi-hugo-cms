@@ -24,6 +24,9 @@ products:
       The skilled practitioner works in unison with your body, reacting to the
       natural feedback. Your body will not be pushed beyond what you can safely
       enjoy.
+productscta:
+  - btnhref: "/products"
+    btntext: "More About Massage Sessions"
 values:
   heading: Our values
   text: >-
