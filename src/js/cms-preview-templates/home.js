@@ -36,7 +36,7 @@ export default class PostPreview extends React.Component {
             </div>
 
             <div className="tc">
-              <a href="#" className="btn raise">More</a>
+              <a href="#" className="btn raise">{entry.getIn(["data", "productscta", "btntext"])}</a>
             </div>
           </div>
         </div>
