@@ -17,7 +17,9 @@ intro:
     knowledge to anyone.
 products:
   - image: /img/thai-massage.jpg
-    text: To have a full body Massage expect your session to last for 90  minutes
+    text: >-
+      To have a full body Massage expect your session to last for 90  minutes.
+      IN the session wthe practitioner will work all parts of your body.
   - image: /img/thai-yoga-massage.jpg
     text: >-
       The skilled practitioner works in unison with your body, reacting to the
