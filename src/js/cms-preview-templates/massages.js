@@ -23,7 +23,7 @@ export default class PostPreview extends React.Component {
 
           <div className="flex-ns flex-wrap mhn2-ns mb3">
             {(entry.getIn(["data", "intro", "blurbs"]) || []).map((blurb, index) => <div className="ph2-ns w-50-ns mb4" key={index}>
-              <img src={blurb.get("image") && getAsset(blurb.get("image"))} alt="" className="center db mb3" style={{width: "240px"}}/>
+              <img src={blurb.get("image") && getAsset(blurb.get("image"))} alt="" className="center db mb3" style={{width: 500px; height: 375px ; object-fit: cover;}}/>
               <p>{blurb.get("text")}</p>
             </div>)}
           </div>
