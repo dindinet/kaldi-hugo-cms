@@ -61,7 +61,7 @@ collections: # A list of collections the CMS should be able to edit
                 name: text
                 widget: text
       - file: "site/content/massages/_index.md"
-        label: "massages Page"
+        label: "Massages Page"
         name: "massages"
         fields:
           - {label: Title, name: title, widget: string}
