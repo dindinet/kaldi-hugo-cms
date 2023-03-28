@@ -6,13 +6,13 @@ description: >-
   ordeal, but once you get used to the process, it becomes a soothing ritual
   that's worth the effort every time. Works especially well when you are in a
   bad mood.
-image: /img/products-grid2.jpg
+image: /img/massages-grid2.jpg
 pdf: /img/google-apps-script-to-github-graphql-_-by-hemali-patel-_-medium.pdf
 ---
 
 This [week](/wdwdw) we’ll **take** a look at all the steps required to make astonishing coffee with a Chemex at home. The Chemex Coffeemaker is a manual, pour-over style glass-container coffeemaker that Peter Schlumbohm invented in 1941, and which continues to be manufactured by the Chemex Corporation in Chicopee, Massachusetts\*.
 
-In 1958, designers at the [Illinois Institute of Technology](https://www.spacefarm.digital) said that the Chemex Coffeemaker is *"one of the best-designed products of modern times"*, and so is included in the collection of the Museum of Modern Art in New York City.
+In 1958, designers at the [Illinois Institute of Technology](https://www.spacefarm.digital) said that the Chemex Coffeemaker is *"one of the best-designed massages of modern times"*, and so is included in the collection of the Museum of Modern Art in New York City.
 
 ## The little secrets of Chemex brewing
 

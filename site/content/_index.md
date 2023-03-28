@@ -14,7 +14,7 @@ intro:
     Thai Yoga Massage has a long history and only requires the human touch of
     your practitioner and a willingness to put your trust in their skill and
     knowledge
-products:
+massages:
   - image: /img/thai-massage.jpg
     text: >-
       To have a full body Massage expect your session to last for 90  minutes.
@@ -24,8 +24,8 @@ products:
       The skilled practitioner works in unison with your body, reacting to the
       natural feedback. Your body will not be pushed beyond what you can safely
       enjoy.
-productscta:
-  btnhref: /products
+massagescta:
+  btnhref: /massages
   btntext: Massage Session Full Details
 values:
   heading: Our values
