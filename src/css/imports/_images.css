@@ -10,4 +10,5 @@ img:not(.w-100) {
 .eqimgs{
   width: 500px;
   height: 375px;
-  object-fit: cover;}
+  object-fit: cover;
+}
