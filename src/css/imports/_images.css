@@ -6,3 +6,8 @@ img {
 img:not(.w-100) {
   border-radius: var(--border-radius);
 }
+
+.eqimgs{
+  width: 500px;
+  height: 375px;
+  object-fit: cover;}
