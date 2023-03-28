@@ -1,48 +1,43 @@
 ---
-title: Our Coffee
-type: massages
-image: /img/massages-jumbotron.jpg
-heading: What we offer
+title: Thai Yoga Massage
+image: /img/deeptissuemassage.jpg
+heading: The Thai Yoga Massages we offer
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  Thai Yoga Massage treatment by qualified Thai Yoga Massage Practitioner Elena
+  Lopez
 intro:
   blurbs:
-    - image: /img/illustrations-coffee.svg
+    - image: /img/thai-massage.jpg
       text: >
         We sell green and roasted coffee beans that are sourced directly from
         independent farmers and farm cooperatives. We’re proud to offer a
         variety of coffee beans grown with great care for the environment and
         local communities. Check our post or contact us directly for current
         availability.
-    - image: /img/illustrations-coffee-gear.svg
+    - image: /img/feetonback.jpg
       text: >
         We offer a small, but carefully curated selection of brewing gear and
         tools for every taste and experience level. No matter if you roast your
         own beans or just bought your first french press, you’ll find a gadget
         to fall in love with in our shop.
-    - image: /img/illustrations-tutorials.svg
+    - image: /img/deeptissuemassage.jpg
       text: >
         Love a great cup of coffee, but never knew how to make one? Bought a
         fancy new Chemex but have no clue how to use it? Don't worry, we’re here
         to help. You can schedule a custom 1-on-1 consultation with our baristas
         to learn anything you want to know about coffee roasting and brewing.
         Email us or call the store for details.
-    - image: /img/illustrations-meeting-space.svg
+    - image: /img/thai-yoga-massage-cobra.jpg
       text: >
         We believe that good coffee has the power to bring people together.
         That’s why we decided to turn a corner of our shop into a cozy meeting
         space where you can hang out with fellow coffee lovers and learn about
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
-  heading: What we offer
+  heading: The Massages we offer
   description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+    We aofer massages that can assist in the treatment of various physical
+    discomforts and mental anguish.
 main:
   heading: Great coffee with no compromises
   description: >
@@ -98,5 +93,4 @@ pricing:
       plan: Custom
       price: '?'
 ---
-
 
