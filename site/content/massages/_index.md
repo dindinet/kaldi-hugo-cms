@@ -47,13 +47,13 @@ main:
     optimal for the plants, farmers and the local environment.
   image1:
     alt: A close-up of a paper filter filled with ground coffee
-    image: /img/massages-grid3.jpg
+    image: /img/warmsmear-cobra-removed.jpg
   image2:
     alt: A green cup of a coffee on a wooden table
-    image: /img/massages-grid2.jpg
+    image: /img/warmsmear-kneeback-removed.jpg
   image3:
     alt: Coffee beans
-    image: /img/massages-grid1.jpg
+    image: ''
 testimonials:
   - author: Elisabeth Kaurismäki
     quote: >-
@@ -63,7 +63,7 @@ testimonials:
     quote: >-
       Kaldi is the place to go if you want the best quality coffee. I love their
       stance on empowering farmers and transparency.
-full_image: /img/massages-full-width.jpg
+full_image: /img/warmsmear-neck-removed.jpg
 pricing:
   heading: Monthly subscriptions
   description: >-
