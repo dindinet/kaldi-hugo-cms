@@ -55,14 +55,18 @@ main:
     alt: Coffee beans
     image: ''
 testimonials:
-  - author: Elisabeth Kaurismäki
+  - author: David Keith
     quote: >-
-      The first time I tried Kaldi’s coffee, I couldn’t even believe that was
-      the same thing I’ve been drinking every morning.
-  - author: Philipp Trommler
+      The first time I tried a Thai Yoga Massage, I was amazed by the results.
+      Afterwards I felt light and elated and the aches and pains that I normally
+      suffer from were much reduced. They did come back but that is probably the
+      signal to book another massage.
+  - author: Gill Daniels
     quote: >-
-      Kaldi is the place to go if you want the best quality coffee. I love their
-      stance on empowering farmers and transparency.
+      I had never heard of Thai Yoga Massage until a friend recomended it for my
+      knee pain. I have had one massage session and my knee felt stronger.  My
+      practitioner told me that once my body was accustomed to stretching I
+      would be able to do more with confidence.
 full_image: /img/warmsmear-neck-removed.jpg
 pricing:
   heading: Monthly subscriptions
