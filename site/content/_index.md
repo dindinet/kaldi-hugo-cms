@@ -1,7 +1,7 @@
 ---
 title: Thai Yoga Massage
 subtitle: The benefits of yoga without the years of training
-image: /img/deeptissuemassage.jpg
+image: /img/screenshot-from-2023-03-28-18-41-14.png
 blurb:
   heading: Why Thai Yoga Massage?
   text: >-
