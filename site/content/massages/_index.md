@@ -9,47 +9,40 @@ intro:
   blurbs:
     - image: /img/thai-massage.jpg
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
+        Feel the stretch as your practitioner gently encourages your body to to
+        do more than you expected.
     - image: /img/feetonback.jpg
       text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
+        Getting a massage is just a nice thing. Deep massage is an even nicer
+        thing.
     - image: /img/deeptissuemassage.jpg
       text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
+        Thai Yoga Massage (TYM) uses an energy line system—the Ten Sen—through
+        which the body's natural life force flows. Blockages in this life force
+        cause aches, pains and disease..
     - image: /img/thai-yoga-massage-cobra.jpg
       text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+        TYM treats ailments such as headache, knee pain, back, shoulder and neck
+        pain, premenstrual tension and others. It is especially effective for
+        numbness or loss of feeling in conditions such as Multiple Sclerosis, or
+        after a stroke, and can help with pain relief during labour.
   heading: The Massages we offer
   description: >
-    We aofer massages that can assist in the treatment of various physical
+    We offer massages that can assist in the treatment of various physical
     discomforts and mental anguish.
 main:
-  heading: Great coffee with no compromises
+  heading: Who is Thai Yoga Massage for?
   description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
+    Contrary to popular preconceptions, TYM  does not require practitioner or
+    receiver to be flexible, athletic or strong. Each treatment is designed to
+    suit client needs. As the basic principle is to balance the energy body with
+    palming and thumbing techniques, this form of body work can be done on or by
+    anyone: young, old, healthy or unwell!
   image1:
-    alt: A close-up of a paper filter filled with ground coffee
+    alt: shoulder stretch
     image: /img/warmsmear-cobra-removed.jpg
   image2:
-    alt: A green cup of a coffee on a wooden table
+    alt: back stretch
     image: /img/warmsmear-kneeback-removed.jpg
   image3:
     alt: Coffee beans
