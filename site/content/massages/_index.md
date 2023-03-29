@@ -1,6 +1,6 @@
 ---
 title: Thai Yoga Massage
-image: /img/deeptissuemassage.jpg
+image: /img/warmsmear-neck-removed.jpg
 heading: The Thai Yoga Massages we offer
 description: >-
   Thai Yoga Massage treatment by qualified Thai Yoga Massage Practitioner Elena
@@ -60,7 +60,7 @@ testimonials:
       knee pain. I have had one massage session and my knee felt stronger.  My
       practitioner told me that once my body was accustomed to stretching I
       would be able to do more with confidence.
-full_image: /img/warmsmear-neck-removed.jpg
+full_image: /img/deeptissuemassage.jpg
 pricing:
   heading: Massage Sessions
   description: >-
