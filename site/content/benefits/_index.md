@@ -1,7 +1,7 @@
 ---
 title: Benefits
 image: /img/warmsmear-cobra-removed.jpg
-values:
+benefits:
   - heading: Thai Yoga Massage Benefits
     imageUrl: /img/screenshot-from-2023-03-28-18-41-14.png
     text: >

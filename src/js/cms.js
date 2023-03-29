@@ -3,8 +3,8 @@ import CMS from "netlify-cms";
 
 import HomePreview from "./cms-preview-templates/home";
 import PostPreview from "./cms-preview-templates/post";
-import massagesPreview from "./cms-preview-templates/massages";
-import ValuesPreview from "./cms-preview-templates/values";
+import MassagesPreview from "./cms-preview-templates/massages";
+import BenefitsPreview from "./cms-preview-templates/benefits";
 import ContactPreview from "./cms-preview-templates/contact";
 
 
@@ -24,6 +24,6 @@ CMS.registerPreviewStyle("/css/main.css");
 CMS.registerPreviewTemplate("home", HomePreview);
 CMS.registerPreviewTemplate("post", PostPreview);
 CMS.registerPreviewTemplate("massages", massagesPreview);
-CMS.registerPreviewTemplate("values", ValuesPreview);
+CMS.registerPreviewTemplate("benefits", BenefitsPreview);
 CMS.registerPreviewTemplate("contact", ContactPreview);
 CMS.registerWidget("color", ColorControl);
