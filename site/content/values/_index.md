@@ -1,45 +1,44 @@
 ---
-title: "Values"
-image: /img/about-jumbotron.jpg
+title: Benefits
+image: /img/warmsmear-cobra-removed.jpg
 values:
-  - heading: "Shade-grown coffee"
+  - heading: Thai Yoga Massage Benefits
+    imageUrl: /img/screenshot-from-2023-03-28-18-41-14.png
     text: >
-      Coffee is a small tree or shrub that grows in the forest
-      understory in its wild form, and traditionally was grown
-      commercially under other trees that provided shade. The
-      forest-like structure of shade coffee farms provides habitat for
-      a great number of migratory and resident species.
-    imageUrl: "/img/about-shade-grown.jpg"
-  - heading: "Single origin"
+      Overall, Thai Yoga Massage is a holistic therapy that can benefit the
+      body, mind, and spirit by promoting relaxation, reducing stress, and
+      improving overall wellness.
+  - heading: Improved flexibility and range of motion
+    imageUrl: /img/about-single-origin.jpg
     text: >
-      Single-origin coffee is coffee grown within a single known
-      geographic origin. Sometimes, this is a single farm or a
-      specific collection of beans from a single country. The name of
-      the coffee is then usually the place it was grown to whatever
-      degree available.
-    imageUrl: "/img/about-single-origin.jpg"
-  - heading: "Sustainable farming"
+      Thai Yoga Massage uses stretches and yoga-like movements to help increase
+      flexibility and mobility in the body.
+  - heading: Reduced stress and anxiety
+    imageUrl: /img/about-sustainable-farming.jpg
+    text: >-
+      Thai Yoga Massage can help relax the body and mind, reducing stress and
+      anxiety levels.
+  - heading: Relief from pain and tension
+    imageUrl: /img/about-direct-sourcing.jpg
     text: >
-      Sustainable agriculture is farming in sustainable ways based on
-      an understanding of ecosystem services, the study of
-      relationships between organisms and their environment. What
-      grows where and how it is grown are a matter of choice and
-      careful consideration for nature and communities.
-    imageUrl: "/img/about-sustainable-farming.jpg"
-  - heading: "Direct sourcing"
+      Thai Yoga Massage can help alleviate chronic pain and tension,
+      particularly in the back, shoulders, and neck.
+  - heading: Increased energy and vitality
+    imageUrl: /img/about-reinvest-profits.jpg
     text: >
-      We want to truly empower the communities that bring amazing
-      coffee to you. That’s why we reinvest 20% of our profits into
-      farms, local businesses and schools everywhere our coffee is
-      grown. You can see the communities grow and learn more about
-      coffee farming on our blog.
-    imageUrl: "/img/about-direct-sourcing.jpg"
-  - heading: "Reinvest profits"
-    text: >
-      We want to truly empower the communities that bring amazing
-      coffee to you. That’s why we reinvest 20% of our profits into
-      farms, local businesses and schools everywhere our coffee is
-      grown. You can see the communities grow and learn more about
-      coffee farming on our blog.
-    imageUrl: "/img/about-reinvest-profits.jpg"
+      Thai Yoga Massage can help boost energy levels and improve overall
+      vitality by stimulating the body's energy flow.
+  - heading: Improved circulation
+    text: >-
+      Thai Yoga Massage can help improve blood and lymphatic circulation, aiding
+      in the delivery of oxygen and nutrients to the body's tissues.
+  - heading: Enhanced immune function
+    text: >-
+      Thai Yoga Massage can help boost the immune system by stimulating
+      lymphatic flow and improving the body's natural defense mechanisms.
+  - heading: Improved digestion
+    text: >-
+      Thai Yoga Massage can help stimulate the digestive system, aiding in the
+      absorption and elimination of food and waste.
 ---
+
