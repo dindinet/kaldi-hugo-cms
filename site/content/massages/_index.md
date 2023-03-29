@@ -69,31 +69,33 @@ testimonials:
       would be able to do more with confidence.
 full_image: /img/warmsmear-neck-removed.jpg
 pricing:
-  heading: Monthly subscriptions
+  heading: Massage Sessions
   description: >-
-    We make it easy to make great coffee a part of your life. Choose one of our
-    monthly subscription plans to receive great coffee at your doorstep each
-    month. Contact us about more details and payment info.
+    We make it easy to include thai yoga massage into your life. Choose one of
+    our Thai Yoga massage sessions to receive the benefits in your life.
   plans:
-    - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
+    - description: >-
+        Perfect for the person who wants to get an introduction to the benefits
+        of Thai Yoga Massage
       items:
-        - 3 lbs of coffee per month
-        - Green or roasted beans"
-        - One or two varieties of beans"
-      plan: Small
+        - >-
+          A 1 hour session where your ractitioner will discuss your issues and
+          then work on giving relief.
+      plan: 60 minute session
       price: '50'
-    - description: 'Great for avid drinkers, java-nsoving couples and bigger crowds'
+    - description: IN 90 minutes you can expect a full body massage.
       items:
-        - 6 lbs of coffee per month
-        - Green or roasted beans
-        - Up to 4 different varieties of beans
-      plan: Big
+        - >-
+          A full body massage works on the natural energy lines of the body as
+          well as the major muscle groups.
+      plan: 90 minute session
       price: '80'
-    - description: Want a few tiny batches from different varieties? Try our custom plan
+    - description: A massage session tailored to your specific needs.
       items:
-        - Whatever you need
-        - Green or roasted beans
-        - Unlimited varieties
+        - >-
+          Some people just like the fact that they can feel the benefits of a
+          full yoga workout without all the years of learning. Others have very
+          specific stiffness or pain issues.
       plan: Custom
       price: '?'
 ---
