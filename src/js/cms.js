@@ -23,7 +23,7 @@ class ColorControl extends React.Component {
 CMS.registerPreviewStyle("/css/main.css");
 CMS.registerPreviewTemplate("home", HomePreview);
 CMS.registerPreviewTemplate("post", PostPreview);
-CMS.registerPreviewTemplate("massages", massagesPreview);
+CMS.registerPreviewTemplate("massages", MassagesPreview);
 CMS.registerPreviewTemplate("benefits", BenefitsPreview);
 CMS.registerPreviewTemplate("contact", ContactPreview);
 CMS.registerWidget("color", ColorControl);
