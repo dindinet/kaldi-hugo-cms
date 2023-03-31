@@ -2,8 +2,10 @@
 title: A beginners’ guide to Thai Yoga Massage
 date: 2023-03-31T15:04:10.000Z
 description: >-
-    Receiving a Thai Yoga Massage can be a wonderful experience, but it's essential to prepare yourself beforehand to ensure you get the most out of the session. Here are some tips to help you prepare for your Thai Yoga Massage:
-image: /img/massages-grid2.jpg
+  Receiving a Thai Yoga Massage can be a wonderful experience, but it's
+  essential to prepare yourself beforehand to ensure you get the most out of the
+  session. Here are some tips to help you prepare for your Thai Yoga Massage:
+image: /img/ancientpeopleonwhitex4.jpg
 ---
 
 **Wear comfortable clothing**: Thai Yoga Massage involves a lot of stretching and movement, so it's important to wear loose-fitting, comfortable clothing that allows you to move freely.
