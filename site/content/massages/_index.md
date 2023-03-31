@@ -44,9 +44,6 @@ main:
   image2:
     alt: back stretch
     image: /img/warmsmear-kneeback-removed.jpg
-  image3:
-    alt: Coffee beans
-    image: ''
 testimonials:
   - author: David Keith
     quote: >-
