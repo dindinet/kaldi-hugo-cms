@@ -1,7 +1,7 @@
 ---
 title: .
 subtitle: .
-image: /img/waterdroplogo.jpg
+image: /img/twopinkslogo.jpg
 blurb:
   heading: Why Thai Yoga Massage?
   text: >-
