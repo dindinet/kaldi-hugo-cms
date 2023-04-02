@@ -3,6 +3,10 @@
   transition: var(--hover-transition);
   color: inherit;
 }
+nav .link{
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
 
 .link:link,
 .link:visited {
