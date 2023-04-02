@@ -1,7 +1,7 @@
 ---
 title: Thai Yoga Massage
 image: /img/warmsmear-neck-removed.jpg
-heading: The Thai Yoga Treatments available
+heading: Thai Yoga Massage Treatments
 description: >-
   Thai Yoga Massage treatment by qualified Thai Yoga Massage Practitioner Elena
   Lopez
@@ -26,7 +26,7 @@ intro:
         pain, premenstrual tension and others. It is especially effective for
         numbness or loss of feeling in conditions such as Multiple Sclerosis, or
         after a stroke, and can help with pain relief during labour.
-  heading: The Treatments available
+  heading: Treatments available
   description: >
     We offer massages that can assist in the treatment of various physical
     discomforts and mental anguish.

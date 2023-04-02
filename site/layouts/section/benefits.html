@@ -2,6 +2,7 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
 
+<h1 class="f3 b lh-title mb2">{{ .Title }}</h1>
 <div class="mw7 center ph3 pt4">
 
   {{ range $index, $element := .Params.benefits }}

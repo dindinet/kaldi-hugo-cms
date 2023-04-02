@@ -1,8 +1,8 @@
 ---
-title: Benefits
+title: Thai Yoga Massage Benefits
 image: /img/warmsmear-cobra-removed-cropped.jpg
 benefits:
-  - heading: Thai Yoga Massage Benefits
+  - heading: There are many Benefits
     imageUrl: /img/screenshot-from-2023-03-28-18-41-14.png
     text: >
       Overall, Thai Yoga Massage is a holistic therapy that can benefit the
