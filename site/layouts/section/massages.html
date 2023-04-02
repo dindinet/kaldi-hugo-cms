@@ -1,7 +1,9 @@
 {{ define "main" }}
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
+<div class="mw7 center">
 <h1 class="f3 b lh-title mb2">{{ .Params.heading }}</h1>
+</div>
 {{ partial "4-up" .Params.intro }}
 
 
