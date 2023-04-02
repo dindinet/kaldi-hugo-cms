@@ -6,7 +6,7 @@ intro: >
   body, mind, and spirit by promoting relaxation, reducing stress, and
   improving overall wellness.
 benefits:
-   - heading: Improved flexibility and range of motion
+  - heading: Improved flexibility and range of motion
     imageUrl: /img/improved-flexibility.jpg
     text: >
       Thai Yoga Massage uses stretches and yoga-like movements to help increase
