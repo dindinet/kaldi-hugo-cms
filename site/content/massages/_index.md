@@ -26,7 +26,7 @@ intro:
         pain, premenstrual tension and others. It is especially effective for
         numbness or loss of feeling in conditions such as Multiple Sclerosis, or
         after a stroke, and can help with pain relief during labour.
-  heading: Treatments available
+  heading: Thai Yoga Massage Treatments
   description: >
     We offer massages that can assist in the treatment of various physical
     discomforts and mental anguish.
