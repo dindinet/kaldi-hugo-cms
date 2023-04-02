@@ -1,7 +1,7 @@
 ---
 title: .
 subtitle: .
-image: /img/twopinkslogo.jpg
+image: https://res.cloudinary.com/dklongley/image/upload/v1680449644/fpbanner.jpg
 blurb:
   heading: Why Thai Yoga Massage?
   text: >-
