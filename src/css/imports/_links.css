@@ -8,7 +8,7 @@ nav .link{
   text-transform: uppercase;
   
 }
-nav .link::hover{
+nav a.link:hover{
   text-decoration: none;
 }
 
