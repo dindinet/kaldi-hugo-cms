@@ -6,6 +6,7 @@
 nav .link{
   font-size: 0.6rem;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .link:link,
