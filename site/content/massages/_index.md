@@ -1,7 +1,7 @@
 ---
 title: Thai Yoga Massage
 image: /img/warmsmear-neck-removed.jpg
-heading: The Thai Yoga Massages we offer
+heading: The Thai Yoga Treatments we offer
 description: >-
   Thai Yoga Massage treatment by qualified Thai Yoga Massage Practitioner Elena
   Lopez
