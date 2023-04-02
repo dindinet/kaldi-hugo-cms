@@ -1,14 +1,12 @@
 ---
 title: Thai Yoga Massage Benefits
 image: /img/warmsmear-cobra-removed-cropped.jpg
+intro: >
+  Overall, Thai Yoga Massage is a holistic therapy that can benefit the
+  body, mind, and spirit by promoting relaxation, reducing stress, and
+  improving overall wellness.
 benefits:
-  - heading: There are many Benefits
-    imageUrl: /img/screenshot-from-2023-03-28-18-41-14.png
-    text: >
-      Overall, Thai Yoga Massage is a holistic therapy that can benefit the
-      body, mind, and spirit by promoting relaxation, reducing stress, and
-      improving overall wellness.
-  - heading: Improved flexibility and range of motion
+   - heading: Improved flexibility and range of motion
     imageUrl: /img/improved-flexibility.jpg
     text: >
       Thai Yoga Massage uses stretches and yoga-like movements to help increase
