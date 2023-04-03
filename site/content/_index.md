@@ -1,6 +1,6 @@
 ---
-title: .
-subtitle: .
+title: Thai Yoga Massage
+subtitle: All the Benefits of Yoga without the Years of Practice 
 image: https://res.cloudinary.com/dklongley/image/upload/v1680449644/fpbanner.jpg
 blurb:
   heading: Why Thai Yoga Massage?
