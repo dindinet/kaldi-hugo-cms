@@ -1,19 +1,29 @@
 <nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative">
 
 	<!-- Logo -->
-	<a href="/" class="pa2 pa3-m db mr4 h-100 w4 w5-m flex-none">
+	<a href="/" class="pa2 pa3-m db mr4 h-100 w4 w5-ns flex-none">
 		<img src="/img/thaiyom-logo-horizontal-black-yellow.svg" alt="Thaiyom logo" class="br0 db mb0 w-100"/>
 	</a>
 
 	<!-- Primary Nav -->
+	<style>
+	   .home-icon {
+		 width: 36px;
+		 height: 36px;
+	  }
+	  </style>
 	<ul class="flex b grey-3 sm:hidden">
-		<li><a href="/massages" class="pa2 pa3-m no-underline db link">Treatments</a></li>
+		<li><svg viewBox="0 0 1024 1024" class="home-icon pa2 pa3-m no-underline dn-ns">
+			<path d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"></path>
+		  </svg>
+		</li>
+		<li><a href="/massages" class="pa2 pa3-m no-underline db-ns dn link">Treatments</a></li>
 
-		<li><a href="/benefits" class="pa2 pa3-m no-underline db link">Benefits</a></li>
+		<li><a href="/benefits" class="pa2 pa3-m no-underline db-ns dn link">Benefits</a></li>
 
-		<li><a href="/post" class="pa2 pa3-m no-underline db link">Blog</a></li>
+		<li><a href="/post" class="pa2 pa3-m no-underline db-ns dn link">Blog</a></li>
 
-		<li><a href="/contact" class="pa2 pa3-m no-underline db link">Contact</a></li>
+		<li><a href="/contact" class="pa2 pa3-m no-underline db-ns dn link">Contact</a></li>
 	</ul>
 
 </nav>
