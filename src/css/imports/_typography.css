@@ -24,7 +24,7 @@ p {
   margin-bottom: var(--spacing-medium);
   max-width: 32rem;
 }
-
+.mdblock p{max-width: 100%}
 strong {
   font-weight: var(--bold-font-weight);
 }
