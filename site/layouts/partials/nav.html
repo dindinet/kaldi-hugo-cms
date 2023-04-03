@@ -6,7 +6,7 @@
 	</a>
 
 	<!-- Primary Nav -->
-	<ul class="flex b grey-3">
+	<ul class="flex b grey-3 sm:hidden">
 		<li><a href="/massages" class="pa3 no-underline db link">Treatments</a></li>
 
 		<li><a href="/benefits" class="pa3 no-underline db link">Benefits</a></li>
@@ -15,5 +15,20 @@
 
 		<li><a href="/contact" class="pa3 no-underline db link">Contact</a></li>
 	</ul>
+	<div class="hidden space-x-8 lg:flex">
+		<a href="/massages" class="pa3 no-underline db link">Treatments</a>
+		<a href="/benefits" class="pa3 no-underline db link">Benefits</a>
+		<a href="/post" class="pa3 no-underline db link">Blog</a>
+		<a href="/contact" class="pa3 no-underline db link">Contact</a>
+	  </div>
+	  <div class="flex lg:hidden">
+		<div class="space-y-2">
+		  <span class="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
+		  <span class="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
+		  <span class="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
+		</div>
+	  </div>
 
 </nav>
+
+
