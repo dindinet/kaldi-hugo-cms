@@ -7,7 +7,7 @@
   <h1 class="f3 b lh-title mb2">{{ .Title }}</h1>
   <div class="flex-m mhn3-m mb4">
     <div class="ph3-m w-100-m">
-      <p class="mw8">{{ Params.intro }}</p>
+      <p class="mw8">{{ .Params.intro }}</p>
     </div>
   </div>
   {{ range $index, $element := .Params.benefits }}
