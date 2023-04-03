@@ -36,6 +36,11 @@ export default class BenefitsPreview extends React.Component {
       <Jumbotron image={image} title={entry.getIn(["data", "title"])} />
       <div className="bg-off-white pv4">
         <div className="mw7 center ph3 pt4">
+        <div class="flex-m mhn3-m mb4">
+         <div class="ph3-m w-100-m">
+          <p class="mw8">{entry.getIn(["data", "intro"])}</p>
+       </div>
+       </div>
           {benefits.map(({text, heading, imageUrl}, i) =>
             <MediaBlock key={i} text={text} heading={heading} imageUrl={imageUrl} reverse={i % 2 === 0} />
           )}
