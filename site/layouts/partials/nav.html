@@ -41,7 +41,11 @@
         	l.classList.toggle("db")
         	l.addEventListener('click', () => {
 				navbarmenuelement.classList.toggle("showmbmenu");
+				links.forEach((l) => {
+        	      l.classList.toggle("dn")
+        	      l.classList.toggle("db")
             })
+		  })	
 	    })
     }
   // click on hamburger 
