@@ -39,10 +39,10 @@
   display:block;
   padding-top: 10px;
   position: fixed;
-  top: 62px;
+  top: 22px;
   right: 0;
   background-color:white;
-  width:50%;
+  width:40%;
   border-left: 2px solid var(--highlight);
   border-bottom: 2px solid var(--highlight);
 }
