@@ -47,5 +47,5 @@
   border-bottom: 2px solid var(--highlight);
 }
  .showmbmenu nav .link{
-  font-size: 1.1rem;
+  font-size: 1.1rem!important;
  }
