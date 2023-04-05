@@ -12,7 +12,7 @@
 		 height: 36px;
 	  }
 	  </style>
-	  <a href="#" data-target="navbarMenu" class="db dn-ns">
+	  <a href="#" data-target="navbarMenu" id="hamburger" onclick="showmobilemenu()" class="db dn-ns">
 		<svg viewBox="0 0 1024 1024" class="home-icon pa2 pa3-m no-underline dn-ns">
 			<path d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"></path>
 		  </svg>
@@ -32,6 +32,17 @@
 
 </nav>
 <script>
+	function showmobilemenu(){
+		var navbarmenuelement = document.getElementById("navbarMenu");
+		navbarmenuelement.classList.toggle("showmbmenu");
+		var links = navbarmenuelement.querySelectorAll('.link')
+		links.forEach((l) => {
+        	l.classList.toggle("dn")
+        	l.classList.toggle("db")
+        	l.addEventListener('click', () => {
+				navbarmenuelement.classList.toggle("showmbmenu");
+            })
+	}
   // click on hamburger 
   // add mobilemenuon class to navbarmenu
   // var navbarmenuelement = document.getElementById("navbarMenu");
