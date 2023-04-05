@@ -35,14 +35,15 @@
 	function showmobilemenu(){
 		var navbarmenuelement = document.getElementById("navbarMenu");
 		navbarmenuelement.classList.toggle("showmbmenu");
-		var links = navbarmenuelement.querySelectorAll('.link')
+		var links = navbarmenuelement.querySelectorAll('.link');
 		links.forEach((l) => {
         	l.classList.toggle("dn")
         	l.classList.toggle("db")
         	l.addEventListener('click', () => {
 				navbarmenuelement.classList.toggle("showmbmenu");
             })
-	}
+	    }
+    }
   // click on hamburger 
   // add mobilemenuon class to navbarmenu
   // var navbarmenuelement = document.getElementById("navbarMenu");
