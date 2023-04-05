@@ -37,9 +37,9 @@
 
 .showmbmenu {
   display:block;
-  padding-top: 48px;
+  padding-top: 10px;
   position: fixed;
-  top: 0;
+  top: 48;
   right: 0;
   background-color:white;
   width:100%;
