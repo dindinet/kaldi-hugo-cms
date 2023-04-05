@@ -43,4 +43,6 @@
   right: 0;
   background-color:white;
   width:50%;
+  border-left: 2px solid --highlight;
+  border-bottom: 2px solid --highlight;
 }
