@@ -31,7 +31,7 @@ benefits:
   - heading: Improved circulation
     imageUrl: /img/Improved circulation.jpg
     text: >-
-      Thai Yoga Massage can help improve blood and lymphatic circulation, aiding
+      Thai Yoga Massage can help improve blood circulation and lymphatic flow, aiding
       in the delivery of oxygen and nutrients to the body's tissues.
   - heading: Enhanced immune function
     imageUrl: /img/enhanced-imune-system.jpg
