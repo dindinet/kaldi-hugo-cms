@@ -1,5 +1,5 @@
 ---
-title: A beginners’ guide to Thai Yoga Massage
+title: A beginner's guide to Thai Yoga Massage
 date: 2023-03-31T15:04:10.000Z
 description: >-
   Receiving a Thai Yoga Massage can be a wonderful experience, but it's
