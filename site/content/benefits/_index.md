@@ -5,7 +5,7 @@ intro: >
   Today, Thai Yoga Massage is practiced around the world and is known for its many health benefits. It only requires the human touch of your practitioner and a willingness to put your trust in their skill and knowledge.
   <br/><br/>
 
-  Thai Yoga Massage is ideal for everyone. The treatments are customized for each individual according to their body type, age and specific needs resulting in a therapeutic experience that can benefit the body, the mind and the spirit.
+  Thai Yoga Massage is ideal for everyone. The treatments are customized for each individual according to their body type, age and particular needs resulting in a therapeutic experience that can benefit the body, the mind and the spirit.
 
 benefits:
   - heading: Improved flexibility and range of motion
@@ -31,7 +31,7 @@ benefits:
   - heading: Improved circulation
     imageUrl: /img/Improved circulation.jpg
     text: >-
-      Thai Yoga Massage can help improve blood circulation and lymphatic flow, aiding
+      Thai Yoga Massage can help improve blood circulation, aiding
       in the delivery of oxygen and nutrients to the body's tissues.
   - heading: Enhanced immune function
     imageUrl: /img/enhanced-imune-system.jpg
