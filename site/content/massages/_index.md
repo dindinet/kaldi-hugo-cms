@@ -65,28 +65,28 @@ pricing:
     our Thai Yoga massage sessions to receive the benefits in your life.
   plans:
     - description: >-
-        Perfect for the person who wants to get an introduction to the benefits
+        A session of up to 60 mins is perfect for the person who wants to get an introduction to the benefits
         of Thai Yoga Massage
       items:
         - >-
           A 1 hour session where your ractitioner will discuss your issues and
           then work on giving relief.
-      plan: 60 minute session
-      price: '50'
-    - description: IN 90 minutes you can expect a full body massage.
+      plan: Up to 60 minute session
+      price: '40'
+    - description: A session of up to 90 minutes you can expect a full body massage.
       items:
         - >-
           A full body massage works on the natural energy lines of the body as
           well as the major muscle groups.
-      plan: 90 minute session
-      price: '80'
+      plan: Up to 90 minute session
+      price: '50'
     - description: A massage session tailored to your specific needs.
       items:
         - >-
           Some people just like the fact that they can feel the benefits of a
           full yoga workout without all the years of learning. Others have very
           specific stiffness or pain issues.
-      plan: Custom
-      price: '?'
+      plan: Up to 120 mins
+      price: '60'
 ---
 
