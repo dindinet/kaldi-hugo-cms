@@ -69,7 +69,7 @@ pricing:
         of Thai Yoga Massage
       items:
         - >-
-          A 1 hour session where your ractitioner will discuss your issues and
+          A 1 hour session where your practitioner will discuss your issues and
           then work on giving relief.
       plan: Up to 60 minute session
       price: '40'
