@@ -71,14 +71,14 @@ pricing:
         - >-
           A 1 hour session where your practitioner will discuss your issues and
           then work on giving relief.
-      plan: Up to 60 minute
+      plan: Up to 60 mins
       price: '40'
     - description: A session of up to 90 minutes you can expect a full body massage.
       items:
         - >-
           A full body massage works on the natural energy lines of the body as
           well as the major muscle groups.
-      plan: Up to 90 minute
+      plan: Up to 90 mins
       price: '50'
     - description: A massage session tailored to your specific needs.
       items:
