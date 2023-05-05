@@ -1,7 +1,6 @@
 ---
 title: About
 image: /img/warmsmear-cobra-removed-cropped.jpg
-
 sections:
   - image: /img/thai-massage.jpg
     text: >
