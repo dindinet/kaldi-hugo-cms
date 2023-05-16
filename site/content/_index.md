@@ -11,6 +11,15 @@ blurb:
   styles:
     - text: The Northern style, taught in Chiang Mai, has a slower, more rhythmic style of approach.
     - text: The Southern style is more invigorating and is taught in the Wat Pho temple in Bangkok.
+origins: 
+  heading: Origins of Thai Yoga Massage
+  text: >-
+    Thai yoga massage has its origins in ancient Indian traditions. The practice developed over 2,500 years ago by a physician named Jivaka Kumar Bhaccha, who was considered the father of Thai medicine. He was from northern India and said to be a friend and personal physician of the Buddha.
+
+    Jivaka Kumar Bhaccha combined the principles of Ayurveda, yoga, and traditional Chinese medicine to create a unique system of healing. Thai massage was originally practiced in temples and monasteries as a form of spiritual healing and meditation practice. Over time, it spread to the general population and became a popular form of massage in Thailand. Most of the knowledge was passed down orally from teacher to student to preserve the ancient techniques.
+    
+    It is believed that this system arrived in Thailand around the same time as Buddhism.
+
 intro:
   heading: Everyone Can Benefit from Thai Yoga Massage
   text: >-
