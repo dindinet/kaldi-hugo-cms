@@ -2,5 +2,12 @@
   <div class="x-flex-l mhn1-l ph3 center mw7">
     <h2 class="f2 b lh-title mb2 x-w-40-l">{{.heading}}</h2>
     <p class="x-w-60-l mb0 widep">{{.text}}</p>
+    {{ if (isset .Params "styles") }} 
+    <ul>
+      {{ range .styles }}
+      <li>{{ .text }}</li>
+      {{ end }}
+    </ul>
+    {{ end }}
   </div>
 </div>

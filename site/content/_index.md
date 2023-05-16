@@ -3,11 +3,14 @@ title: Thai Yoga Massage
 subtitle: All the Benefits of Yoga without the Years of Practice 
 image: https://res.cloudinary.com/dklongley/image/upload/v1680449644/fpbanner.jpg
 blurb:
-  heading: Why Thai Yoga Massage?
+  heading: Thai Yoga Massage
   text: >-
-    Just let your Thai Yoga Massage practitioner slowly stretch and manipulate
-    your whole body. At the end you will feel the same as if you had completed a
-    yoga class. All the benefits without the effort.
+    Thai Yoga Massage or Thai Massage – also known as ‘the lazy person’s yoga’ – combines assisted yoga with acupressure techniques. Thai Massage is one form of healing touch that feels like a sacred dance between the giver and receiver and works on many levels for facilitating the flow of energy.
+
+    Although it has evolved into many lineages, techniques and forms, there are two main different styles:
+  styles:
+    - text: The Northern style, taught in Chiang Mai, has a slower, more rhythmic style of approach.
+    - text: The Southern style is more invigorating and is taught in the Wat Pho temple in Bangkok.
 intro:
   heading: Everyone Can Benefit from Thai Yoga Massage
   text: >-
