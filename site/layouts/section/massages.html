@@ -22,7 +22,9 @@
 
 
 <!-- Image grid -->
+{{ with .Params.main }}
 {{ partial "image-grid" . }}
+{{ end }}
 
 
 <div class="pb4">
