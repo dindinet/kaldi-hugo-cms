@@ -19,7 +19,18 @@ origins:
     Jivaka Kumar Bhaccha combined the principles of Ayurveda, yoga, and traditional Chinese medicine to create a unique system of healing. Thai massage was originally practiced in temples and monasteries as a form of spiritual healing and meditation practice. Over time, it spread to the general population and became a popular form of massage in Thailand. Most of the knowledge was passed down orally from teacher to student to preserve the ancient techniques.
     
     It is believed that this system arrived in Thailand around the same time as Buddhism.
+during: 
+  heading: What happens during a Thai Yoga Massage?
+  text: >-
+    Thai yoga massage is considered a practical application of the Buddhist principle of 'Metta' (loving kindness and compassion), which forms the foundation of a quietly effective healing of body, mind and soul.
 
+    The Thai Yoga Massage therapist works around the whole body. Using their hands, thumbs, elbows, knees and feet together with their own body weight, the therapist moves around the body applying pressure/compression to the energy lines (Sen lines) in a rhythmic way, stretching muscles, fascia, ligaments and connective tissue, mobilizing joints and encouraging deep slow breathing, all of which can help to release tension and promote relaxation.
+
+    The massage is typically performed on a firm floor mat with the recipient fully clothed. The treatment usually is done through the clothes, although oils and lotions can sometimes be used.
+
+    In Thailand, a treatment can often last up to 2 hours and, sometimes, even longer. However, in Western countries typically a Thai Massage will last between 30 and 90 minutes.
+
+    A profound sense of calm and peace is usually experienced during and after the treatment.
 intro:
   heading: Everyone Can Benefit from Thai Yoga Massage
   text: >-
