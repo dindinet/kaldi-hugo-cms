@@ -1,0 +1,13 @@
+    <div class="flex-m items-center mhn3-m mb4">
+      <div class="ph3-m w-100-m">
+        <p class="mw8">{{ .intro | markdownify }}</p>
+      </div>
+    </div>
+    {{ range $index, $element := .benefits }}
+      {{ if modBool $index 2 }}
+        {{ partial "media-block" $element }}
+      {{ else }}
+        {{ partial "media-block-reverse" $element }}
+      {{ end }}
+    {{ end }}
+  
