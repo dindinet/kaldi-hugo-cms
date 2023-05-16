@@ -7,6 +7,10 @@ img:not(.w-100) {
   xborder-radius: var(--border-radius);
 }
 
+.photoimg{
+  filter: drop-shadow(8px 8px 10px gray);
+  border: 15px solid #ffffff;
+}
 .eqimgs{
   width: 500px;
   height: 375px;
