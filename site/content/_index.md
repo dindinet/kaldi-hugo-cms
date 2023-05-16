@@ -86,7 +86,7 @@ massages:
       enjoy.
 massagescta:
   btnhref: /massages
-  btntext: Massage Session Info
+  btntext: Book a Session
 values:
   heading: Our Values
   text: >-
