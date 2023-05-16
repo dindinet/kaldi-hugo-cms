@@ -12,7 +12,7 @@ img:not(.w-100) {
   border: 15px solid #ffffff;
 }
 .eqimgs{
-  width: 500px;
-  height: 375px;
+  width: 450px;
+  height: 337px;
   object-fit: cover;
 }
