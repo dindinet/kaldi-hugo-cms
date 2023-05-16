@@ -13,7 +13,7 @@
     <p class="mw8">{{ .description }}</p>
   </div>
 </div>
-
+{{ end }}
 
 <!-- Full-width image 
 <img src="{{ .Params.full_image }}" alt="" class="db w-100">
@@ -23,7 +23,7 @@
 
 <!-- Image grid -->
 {{ partial "image-grid" . }}
-{{ end }}
+
 
 <div class="pb4">
   {{ range .Params.testimonials }}
