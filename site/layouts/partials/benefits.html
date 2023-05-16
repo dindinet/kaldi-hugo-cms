@@ -1,8 +1,8 @@
-    <div class="flex-m items-center mhn3-m mb4">
-      <div class="ph3-m w-100-m">
+<div class="pv4">
+    <div class="x-flex-l mhn1-l ph3 center mw7">
+      <h2 class="f2 b lh-title mb2 x-w-40-l">{{.heading}}</h2>
         <p class="mw8">{{ .text | markdownify }}</p>
-      </div>
-    </div>
+
     {{ range $index, $element := .benefits }}
       {{ if modBool $index 2 }}
         {{ partial "media-block" $element }}
@@ -10,4 +10,5 @@
         {{ partial "media-block-reverse" $element }}
       {{ end }}
     {{ end }}
-  
+</div>
+</div>
