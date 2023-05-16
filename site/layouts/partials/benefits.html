@@ -1,6 +1,6 @@
     <div class="flex-m items-center mhn3-m mb4">
       <div class="ph3-m w-100-m">
-        <p class="mw8">{{ .intro | markdownify }}</p>
+        <p class="mw8">{{ .text | markdownify }}</p>
       </div>
     </div>
     {{ range $index, $element := .benefits }}
