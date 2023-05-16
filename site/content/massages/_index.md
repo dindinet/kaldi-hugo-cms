@@ -59,7 +59,7 @@ testimonials:
       would be able to do more with confidence.
 full_image: /img/deeptissuemassage.jpg
 pricing:
-  heading: Massage Sessions
+  heading: Massage Treatment Sessions
   description: >-
     We make it easy to include thai yoga massage into your life. Choose one of
     our Thai Yoga massage sessions to receive the benefits in your life.
