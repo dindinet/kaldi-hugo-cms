@@ -1,2 +1,2 @@
 .list { list-style-type: none; }
-.standardlist{ list-style-type: disc; }
+.standardlist{ list-style-type: disc;padding-left: 2rem; }
