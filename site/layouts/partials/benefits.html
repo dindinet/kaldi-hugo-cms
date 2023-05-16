@@ -1,9 +1,8 @@
 <div class="bg-grey-1 pv4">
     <div class="x-flex-l mhn1-l ph3 center mw7">
-      <h2 class="f2 b lh-title mb2 x-w-40-l">{{.heading}}</h2>
-        <p class="mw8">{{ .text | markdownify }}</p>
-
-    {{ range $index, $element := .benefits }}
+      <h2 class="f2 b lh-title mb2 x-w-40-l">{{ .intro.heading }}</h2>
+        <p class="mw8">{{ .intro.text | markdownify }}</p>
+    {{ range $index, $element := .intro.benefits }}
       {{ if modBool $index 2 }}
         {{ partial "media-block" $element }}
       {{ else }}
@@ -11,4 +10,7 @@
       {{ end }}
     {{ end }}
 </div>
+<div class="tc">
+    <a href="{{ .massagescta.btnhref }}" class="btn raise">{{ .massagescta.btntext }}</a>
+  </div>
 </div>
