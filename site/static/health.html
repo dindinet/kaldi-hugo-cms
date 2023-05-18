@@ -2,6 +2,9 @@
 <head>
   <link rel = "stylesheet" type = "text/css" media = "screen" href = "screen.css?3">
   <link rel = "stylesheet" type = "text/css" media = "print" href = "print.css">
+  <style type="text/css" rel="stylesheet" media="print">
+    .pdfprintlink{display:none;}
+  </style>
 </head>
 <body>
 
@@ -112,7 +115,7 @@
 
   <input type="submit" value="Submit">
 </form>
-<a href="javascript:void(0);" onclick="window.print();">Print to PDF</a>
+<a href="javascript:void(0);" onclick="window.print();" class="pdfprintlink">Print to PDF</a>
 <script>
 function getDate() {
   var today = new Date();

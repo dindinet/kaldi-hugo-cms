@@ -2,6 +2,9 @@
 <head>
   
   <link rel = "stylesheet" type = "text/css" href = "print.css?6">
+  <style type="text/css" rel="stylesheet" media="print">
+    .pdfprintlink{display:none;}
+  </style>
   <script src="tmpl.js"></script>
 </head>
 <body>
@@ -10,7 +13,7 @@
     
   </div>
 
-<a href="javascript:void(0);" onclick="window.print();">Print to PDF</a>
+<a href="javascript:void(0);" onclick="window.print();" class="pdfprintlink">Print to PDF</a>
 
 <script type="text/x-tmpl" id="tmpl-print-pdf">
 <div style="font-size:24px;"> Health Questionaire</div>
