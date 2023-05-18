@@ -1,0 +1,61 @@
+<html>
+<head>
+  
+  <link rel = "stylesheet" type = "text/css" media = "print" href = "print.css">
+  <script src="tmpl.js"></script>
+</head>
+<body>
+  <div id="thepdf">
+    
+  </div>
+
+
+<a href="javascript:void(0);" onclick="window.print();">Print to PDF</a>
+
+<script type="text/x-tmpl" id="tmpl-test-pdf">
+<h2>Thaiyom Health Questionaire</h2>
+</script>
+
+
+<script type="text/x-tmpl" id="tmpl-print-pdf">
+<h2>Thaiyom Health Questionaire</h2>
+<div>
+  <div>First Name</div>
+  <div>{%=o.fname %}</div>
+</div>
+
+
+
+</script>  
+
+<script>
+
+
+var pairs = location.search.slice(1).split('&');
+    
+    var result = {};
+    pairs.forEach(function(pair) {
+        pair = pair.split('=');
+        result[pair[0]] = decodeURIComponent(pair[1] || '');
+    });
+
+    theJSONweWant = result;
+
+    theConditionsWeFound = [];
+    for (const [key, value] of Object.entries(theJSONweWant)) {
+      if(key.includes('cb_conditions_')){
+        theConditionsWeFound.push(key.replace('cb_conditions_', '').replace(/_/g,' '));
+        delete theJSONweWant[key];
+      }
+    }
+
+    theJSONweWant['conditions'] = theConditionsWeFound;
+
+    document.getElementById('thepdf').innerHTML = tmpl('tmpl-print-pdf', result)
+    
+    //console.log("Da JSON "+JSON.stringify(theJSONweWant))
+
+</script>
+
+</body>
+</html>

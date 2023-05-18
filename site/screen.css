@@ -1,0 +1,17 @@
+
+      body{font-size:1rem;font-family:ubuntu;}
+      form input[type=text], form input[type=email], form input[type=date] {height: 2rem;font-size: 1.2rem;}
+       form input[type=text] {width: 100%;}
+       form input[type=checkbox] {width: 24px;height:24px;}
+      textarea{font-size: 1.2rem;width: 100%;}
+      label{display:inline-block;padding: 4px; background-color: #eee;}
+      #conditions ul{
+        display:flex;
+        flex-wrap: wrap;
+      }
+      #conditions ul li{
+        list-style: none;
+        display: inline-block;
+        width: calc(100% / 4);
+        height: 40px;
+      }

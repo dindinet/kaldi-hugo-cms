@@ -1,0 +1,30 @@
+
+      body{font-size:1rem;font-family:ubuntu;max-width: 960px; padding: 12px;}
+      h1,h2,h3 {color: darkblue;}
+      input[type=text]{height: 2rem;font-size: 1.2rem;width: calc(100% / 1.5);}
+      input[type=checkbox] {width: 24px;height:24px;}
+      textarea{font-size: 1.2rem;width: calc(100% / 1.5);}
+      label{display:inline-block;padding: 4px; background-color: #eee;}
+      #conditions ul{
+        display:flex;
+        flex-wrap: wrap;
+      }
+      #conditions ul li{
+        list-style: none;
+        display: inline-block;
+        width: calc(100% / 4);
+        height: 40px;
+      }
+      .label{font-weight: bold; font-size: 0.8rem;padding:4px;}
+      .data{padding:8px;font-family:monospace;}
+      .flex2wide{display:flex;}
+      .flex2wide .item{display:inline;align-content: space-around;flex-wrap: wrap;min-width: calc(100% / 2);}
+      .flex4wide{display:flex;}
+      .flex4wide .item{display:inline;align-content: space-around;flex-wrap: wrap;min-width: calc(100% / 4);}
+      #selected_conditions li{
+        xlist-style: none;
+        display: inline-block;
+        width: calc(100% / 3);
+        height: 20px;
+      }
+      .smallprint{font-size:0.7rem;}

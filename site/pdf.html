@@ -1,0 +1,186 @@
+<html>
+<head>
+  
+  <link rel = "stylesheet" type = "text/css" href = "print.css?6">
+  <script src="tmpl.js"></script>
+</head>
+<body>
+  <div style="position:fixed; top: 20px; left: 840px"><img style="height:24px;" src="https://thaiyom--elenatym.netlify.app/img/thaiyom-logo-horizontal-black-yellow.svg"/></div>
+  <div id="thepdf">
+    
+  </div>
+
+<a href="javascript:void(0);" onclick="window.print();">Print to PDF</a>
+
+<script type="text/x-tmpl" id="tmpl-print-pdf">
+<div style="font-size:24px;"> Health Questionaire</div>
+
+<div class="flex4wide">
+  <div class="item">
+    <div class="label">Name</div>
+    <div class="data">{%=o.fname %} {%=o.lname %}</div>
+  </div>
+
+  <div class="item">
+    <div class="label">Date</div>
+    <div class="data">{%=o.date %}</div>
+  </div>
+  <div class="item">
+    <div class="label">E-Mail</div>
+    <div class="data">{%=o.email %}</div>
+  </div>
+  <div class="item">
+    <div class="label">Address</div>
+    <div class="data">{%=o.address %}</div>
+  </div>
+</div>
+
+<div class="flex4wide">
+
+  <div class="item">
+    <div class="label">Age</div>
+    <div class="data">{%=o.age %}</div>
+  </div> 
+
+  <div class="item">
+    <div class="label">Sex</div>
+    <div class="data">{%=o.rb_sex %}</div>
+  </div>
+
+  <div class="item">
+    <div class="label">Height</div>
+    <div class="data">{%=o.height %}</div>
+  </div>
+
+  <div class="item">
+    <div class="label">Weight</div>
+    <div class="data">{%=o.weight %}</div>
+  </div>
+</div>
+<div class="flex4wide">
+<div class="item">
+  <div class="label">D.O.B.</div>
+  <div class="data">{%=o.dob %}</div>
+</div>
+<div class="item">
+  <div class="label">Profession</div>
+  <div class="data">{%=o.profession %}</div>
+</div>
+<div class="item">
+  <div class="label">Ayurvedic Dosha</div>
+  <div class="data">{%=o.ayurvedic_dosha %}</div>
+</div>
+</div>
+<div class="flex2wide">
+  <div class="item">
+    <div class="label">Emergency Contact Name</div>
+    <div class="data">{%=o.contact_name %}</div>
+  </div>
+  <div class="item">
+    <div class="label">Emergency Contact Phone</div>
+    <div class="data">{%=o.contact_phone %}</div>
+  </div>
+</div>
+
+<div class="">
+  <div class="label">Current Medication</div>
+  <div class="data">{%=o.current_medication %}</div>
+</div>
+<div class="">
+  <div class="label">Special Medical Conditions</div>
+  <div class="data">{%=o.special_medical_conditions %}</div>
+</div>
+<div class="">
+  
+  <div class="">
+    <span class="label">Selected Conditions</span>
+<ul id="selected_conditions">
+{% for (var i=0; i<o.conditions.length; i++) { %}
+    <li>{%=o.conditions[i]%}</li>
+{% } %}
+</ul>
+  </div>
+</div>
+<div class="">
+  <div class="label">Description of Conditions</div>
+  <div class="data">{%=o.describe_conditions %}</div>
+</div>
+<div class="">
+  <div class="label">Description of Pain, Tension, Numbness or Cramps</div>
+  <div class="data">{%=o.tension_pain %}</div>
+</div>
+<div class="flex4wide">
+<div class="">
+  <div class="label">Restricted Movement</div>
+  <div class="data">{%=o.restricted_movement %}</div>
+</div>
+<div class="">
+  <div class="label">Harmful Movement/Stretches</div>
+  <div class="data">{%=o.harmful_movement %}</div>
+</div>
+<div class="">
+  <div class="label">Music in Session</div>
+  <div class="data">{%=o.prefer_music %}</div>
+</div>
+<div class="">
+  <div class="label">Lotion/Balm on Face</div>
+  <div class="data">{%=o.lotion_balm %}</div>
+</div>
+</div>
+<div class="">
+  <div class="label">Routine Physical Activities</div>
+  <div class="data">{%=o.physical_activity %}</div>
+</div>
+<div class="">
+  <div class="label">Other Comments or Requests</div>
+  <div class="data">{%=o.comments_requests %}</div>
+</div>
+<div class="flex2wide">
+<div class="item">
+  <div class="label">Agreed to Conditions</div>
+  <div class="data"><input type="checkbox" id="cb_agreement" name="cb_agreement" checked></div>
+</div>
+<div class="item">
+  <div class="label">Date of Agreement</div>
+  <div class="data">{%=o.agree_date %}</div>
+</div>
+</div>
+<ul class="smallprint">
+  <li>It is agreed and understood that Thai therapy is intended for relaxation, and that it is not meant to diagnose, treat or remedy any illness, disease, injury, physical condition or mental disorder.</li>
+  <li>Except in cases of emergency, I agree to pay for all sessions which are not canceled at least 24 hours in advance.</li>
+  <li>Traditional Thai massage is strictly non-sexual. Under extenuating circumstances, either party reserves the right to immediately terminate the session.</li>
+  <li>I understand that the practice of all forms of body therapy are subject to local laws and ordinances.</li>
+</ul>
+
+</script>  
+<script>
+
+
+var pairs = location.search.slice(1).split('&');
+    
+    var result = {};
+    pairs.forEach(function(pair) {
+        pair = pair.split('=');
+        result[pair[0]] = decodeURIComponent(pair[1].replace(/\+/g, ' ') || '');
+    });
+
+    theJSONweWant = result;
+
+    theConditionsWeFound = [];
+    for (const [key, value] of Object.entries(theJSONweWant)) {
+      if(key.includes('cb_conditions_')){
+        theConditionsWeFound.push(key.replace('cb_conditions_', '').replace(/_/g,' '));
+        delete theJSONweWant[key];
+      }
+    }
+
+    theJSONweWant['conditions'] = theConditionsWeFound;
+
+    document.getElementById('thepdf').innerHTML = tmpl('tmpl-print-pdf', theJSONweWant);
+    
+    //console.log("Da JSON "+JSON.stringify(theJSONweWant))
+
+</script>
+
+</body>
+</html>
