@@ -15,3 +15,6 @@
         width: calc(100% / 4);
         height: 40px;
       }
+      .flex2wide{display:flex;}
+      .flex2wide .item{display:inline;align-content: space-around;flex-wrap: wrap;min-width: calc(100% / 2);}
+      #theform{margin-top: 8px;}
