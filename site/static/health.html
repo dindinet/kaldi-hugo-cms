@@ -3,7 +3,7 @@
   <link rel = "stylesheet" type = "text/css" media = "screen" href = "screen.css?3">
   <link rel = "stylesheet" type = "text/css" media = "print" href = "print.css">
   <style type="text/css" rel="stylesheet" media="print">
-    .pdfprintlink{display:none;}
+    .hidefromprint{display:none;}
   </style>
 </head>
 <body>
@@ -113,9 +113,9 @@
     <label for="agree_date">Date of agreement:</label> <input type="date" id="agree_date" name="agree_date"><br><br>
   
 
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit" class="hidefromprint">
 </form>
-<a href="javascript:void(0);" onclick="window.print();" class="pdfprintlink">Print to PDF</a>
+<a href="javascript:void(0);" onclick="window.print();" class="hidefromprint">Print to PDF</a>
 <script>
 function getDate() {
   var today = new Date();
