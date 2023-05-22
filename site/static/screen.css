@@ -1,10 +1,11 @@
 
       body{font-size:1rem;font-family:ubuntu;}
+      form input{background-color:rgba(0, 0, 255, 0.096)}
       form input[type=text], form input[type=email], form input[type=date] {height: 2rem;font-size: 1.2rem;}
        form input[type=text] {width: 100%;}
        form input[type=checkbox] {width: 24px;height:24px;}
       textarea{font-size: 1.2rem;width: 100%;}
-      label{display:inline-block;padding: 4px; background-color: #eee;}
+      label{display:inline-block;padding: 4px; color: blue;}
       #conditions ul{
         display:flex;
         flex-wrap: wrap;
