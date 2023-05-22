@@ -79,7 +79,7 @@
   </div>-->
 
 <!--<form id="theform" action="pdf.html" method="get"> -->
-  <form id="theform" action="https://script.google.com/macros/s/AKfycbzAVQgpSkrUyoliLmcx9GOXXb82TL59uXjB88iwtryh/exec" method="get">
+  <form id="healthform" action="" method="">
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="John" required><br>
   <label for="lname">Last name:</label><br>
@@ -288,7 +288,7 @@ window.onload = function() {
       console.log (response)
     }
   
-    document.addEventListener("submit", (e) => {
+  document.addEventListener("submit", (e) => {
    console.log("form has been submitted and processing is happening")
       const form = e.target;        
   
