@@ -19,5 +19,5 @@
       .flex2wide{display:flex;}
       .flex2wide .item{display:inline;align-content: space-around;flex-wrap: wrap;min-width: calc(100% / 2);}
       #theform{margin-top: 8px;}
-      ul#agree{list-style-type: disc;}
+      ul#agree{list-style-type: disc;padding-bottom: 12px;}
       ul#agree li{font-size: 0.7rem;}
