@@ -1,7 +1,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="/css/main.css" />
-  <link rel = "stylesheet" type = "text/css" media = "screen" href = "screen.css?3">
+  <link rel = "stylesheet" type = "text/css" media = "screen" href = "form.css?3">
   <style type="text/css" rel="stylesheet" media="print">
     .hidefromprint{display:none;}
   </style>
@@ -147,7 +147,7 @@
   <textarea id="physical_activity" name="physical_activity" rows="3" value=""></textarea><br><br>
   <label for="comments_requests">Do you have any other comments or requests?</label><br>
   <input type="text" id="comments_requests" name="comments_requests" value=""><br><br> 
-  <ul>
+  <ul id="agree">
     <li>It is agreed and understood that Thai therapy is intended for relaxation, and that it is not meant to diagnose, treat or remedy any illness, disease, injury, physical condition or mental disorder.</li>
     <li>Except in cases of emergency, I agree to pay for all sessions which are not canceled at least 24 hours in advance.</li>
     <li>Traditional Thai massage is strictly non-sexual. Under extenuating circumstances, either party reserves the right to immediately terminate the session.</li>
@@ -156,11 +156,9 @@
   <label for="cb_agreement"> I agree to the above conditions and confirm that the information I have provided is correct.</label>
   <input type="checkbox" id="cb_agreement" name="cb_agreement"> <br>
     <label for="agree_date">Date of agreement:</label> <input type="date" id="agree_date" name="agree_date"><br><br>
-  
-
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit" class="btn raise">
 </form>
-<a href="javascript:void(0);" onclick="window.print();">Print to PDF</a>
+<a href="javascript:void(0);" onclick="window.print();" style="font-size: 0.5rem;padding-top:12px;">Print to PDF</a>
 </div>
 </div>
 <script>
