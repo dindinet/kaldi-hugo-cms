@@ -1,13 +1,61 @@
 <html>
 <head>
+  <link rel="stylesheet" href="/css/main.css" />
   <link rel = "stylesheet" type = "text/css" media = "screen" href = "screen.css?3">
+<<<<<<< HEAD
+  <style type="text/css" rel="stylesheet" media="print">
+    .hidefromprint{display:none;}
+  </style>
+=======
   <link rel = "stylesheet" type = "text/css" media = "print" href = "print.css">
+>>>>>>> 90509b4e9f9e13ecf8ebb256229d06b596718215
 </head>
 <body>
+  <nav class="overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative">
 
-<h2>Thaiyom Health Questionaire</h2>
-<div id='healthform'>
-<form>
+	
+    <a href="/" class="pa2 pa3-m db mr4 h-100 w-70 w5-ns flex-none">
+      <img src="/img/thaiyom-logo-horizontal-black-yellow.svg" alt="Thaiyom logo" class="br0 db mb0 w-100">
+    </a>
+  
+    
+    <style>
+       .home-icon {
+       width: 36px;
+       height: 36px;
+      }
+      </style>
+      <a href="#" data-target="navbarMenu" id="hamburger" onclick="showmobilemenu()" class="db dn-ns">
+      <svg viewBox="0 0 1024 1024" class="home-icon pa2 pa3-m no-underline dn-ns">
+        <path d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"></path>
+        </svg>
+      </a>
+  <style>
+  
+  </style>
+    <div class="flex b grey-3 " id="navbarMenu">
+      <div><a href="/massages" class="pa2 pa3-m no-underline db-ns dn link">Treatments</a></div>
+      
+      <div><a href="/about" class="pa2 pa3-m no-underline db-ns dn link">About</a></div>
+  
+      <div><a href="/post" class="pa2 pa3-m no-underline db-ns dn link">Blog</a></div>
+  
+      <div><a href="/contact" class="pa2 pa3-m no-underline db-ns dn link">Contact</a></div>
+    </div>
+  
+  </nav>
+  <h1>Health Questionaire</h1>
+  <!--<div class="flex2wide">
+    <div class="item">
+      <div style="font-size:24px;"> Health Questionaire</div>
+  </div>
+    <div class="item">
+      <div><img style="height:24px;" src="https://thaiyom--elenatym.netlify.app/img/thaiyom-logo-horizontal-black-yellow.svg"/></div>
+    </div>
+  </div>-->
+
+<!--<form id="theform" action="pdf.html" method="get"> -->
+  <form id="theform" action="https://script.google.com/macros/s/AKfycbzAVQgpSkrUyoliLmcx9GOXXb82TL59uXjB88iwtryh/exec" method="get">
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="John" required><br>
   <label for="lname">Last name:</label><br>
