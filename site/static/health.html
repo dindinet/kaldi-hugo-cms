@@ -2,46 +2,35 @@
 <head>
   <link rel = "stylesheet" type = "text/css" media = "screen" href = "screen.css?3">
   <link rel = "stylesheet" type = "text/css" media = "print" href = "print.css">
-  <style type="text/css" rel="stylesheet" media="print">
-    .hidefromprint{display:none;}
-  </style>
 </head>
 <body>
 
-  <div class="flex2wide">
-    <div class="item">
-      <div style="font-size:24px;"> Health Questionaire</div>
-  </div>
-    <div class="item">
-      <div><img style="height:24px;" src="https://thaiyom--elenatym.netlify.app/img/thaiyom-logo-horizontal-black-yellow.svg"/></div>
-    </div>
-  </div> 
-
-<!--<form id="theform" action="pdf.html" method="get"> -->
-  <form id="theform" action="https://script.google.com/macros/s/AKfycbzAVQgpSkrUyoliLmcx9GOXXb82TL59uXjB88iwtryh/exec" method="get">
+<h2>Thaiyom Health Questionaire</h2>
+<div id='healthform'>
+<form>
   <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
+  <input type="text" id="fname" name="fname" value="John" required><br>
   <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="text" id="lname" name="lname" value="Doe" required><br><br>
   <label for="date">Date:</label><br>
   <input type="date" id="date" name="date" value=""><br><br>
   <label for="email">E-mail:</label><br>
-  <input type="email" id="email" name="email" value=""><br><br>
+  <input type="email" id="email" name="email" value="" required><br><br>
   <label for="address">Address:</label><br>
   <input type="text" id="address" name="address" value=""><br><br>
-  <label for="phone">Phone:</label><br>
-  <input type="text" id="phone" name="phone" value=""><br><br>
+    <label for="phone">Phone:</label><br>
+  <input type="text" id="phone" name="phone" value="" required><br><br>
   <label for="age">Age:</label><br>
   <input type="text" id="age" name="age" value=""><br><br>
   <label for="male">Sex:</label><br>
   <label for="male">male:</label><input type="radio" id="male" name="rb_sex" value="male">
   <label for="female">female:</label><input type="radio" id="female" name="rb_sex" value="female"><br><br>
   <label for="height">Height:</label><br>
-  <input type="text" id="height" name="height" value=""><br><br>
+  <input type="text" id="height" name="height" value="" required><br><br>
   <label for="weight">Weight:</label><br>
-  <input type="text" id="weight" name="weight" value=""><br><br>
+  <input type="text" id="weight" name="weight" value="" required><br><br>
   <label for="dob">DOB:</label><br>
-  <input type="text" id="dob" name="dob" value=""><br><br>
+  <input type="date" id="dob" name="dob" value="" required><br><br>
   <label for="profession">Profession:</label><br>
   <input type="text" id="profession" name="profession" value=""><br><br> 
   <label for="ayurvedic_dosha">Ayurvedic Dosha:</label><br>
@@ -123,9 +112,10 @@
     <label for="agree_date">Date of agreement:</label> <input type="date" id="agree_date" name="agree_date"><br><br>
   
 
-  <input type="submit" value="Submit" class="hidefromprint">
+  <input type="submit" value="Submit">
 </form>
-<a href="javascript:void(0);" onclick="window.print();" class="hidefromprint">Print to PDF</a>
+</div>
+<a href="javascript:void(0);" onclick="window.print();">Print to PDF</a>
 <script>
 function getDate() {
   var today = new Date();
@@ -140,9 +130,8 @@ function getDate() {
   if(mm<10) {
       mm = '0'+mm
   } 
-
   today = yyyy + '-' + mm + '-' + dd;
-  console.log(today);
+//|\\console.log(today);
   document.getElementById("date").value = today;
   document.getElementById("agree_date").value = today;
 }
@@ -151,12 +140,35 @@ function getDate() {
 window.onload = function() {
   getDate();
 };
+//process the form submission
+    function callresult(response){
+      console.log (response)
+    }
+  
+    document.addEventListener("submit", (e) => {
+   console.log("form has been submitted and processing is happening")
+      const form = e.target;        
+  
+      let data = new FormData(form);
+   
+      const queryStr = new URLSearchParams(data).toString();
+  
+      var script = document.createElement('script');
+      script.src = 'https://script.google.com/macros/s/AKfycbyjABpRoVAaFWFLOE0L4sgs5BTQJTuJ3ctNFapB6B8achxX0XuIk439-x5vPXnsv_3XxQ/exec?callback=callresult&'+queryStr;
+      document.body.appendChild(script);
+    
+      var enqname = document.getElementById("fname").value;;
+      var thankmsg = '<p>Thanks '+enqname+'. A therapist will contact you after reveiwing your answers.</p>';
+      document.getElementById('healthform').innerHTML = thankmsg;          
+    
+    e.preventDefault();
+  });
 
 if(location.search.length > 20 ){
 const urlParams = new URLSearchParams(location.search);
 
 for (const [key, qsivalue] of urlParams) {
-    console.log(`${key}:${qsivalue}`);
+  //|\\console.log(`${key}:${qsivalue}`);
     if(key.slice(0, 3) == 'rb_'){
        document.getElementById(qsivalue).checked = true
     }
@@ -187,7 +199,9 @@ for (const [key, qsivalue] of urlParams) {
     }
     theJSONweWant['conditions'] = theConditionsWeFound;
     
-    console.log("Da JSON "+JSON.stringify(theJSONweWant))
+  //|\\console.log("Da JSON "+JSON.stringify(theJSONweWant))
+
+
 
 
 </script>
