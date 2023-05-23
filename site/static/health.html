@@ -304,7 +304,7 @@ window.onload = function() {
 
       var iframe = document.createElement('iframe');
       var html = '<body style="display:none;">Foo</body>';
-      iframe.src = 'https://script.google.com/macros/s/AKfycbwL_6RKsqRnisy0T1XM9yiJlaPqX2TWQ5D_l9Oo6Hikk0GfoHLsaSVLXFvzPASzay1XUw/exec?callback=callresult&'+queryStr;
+      iframe.src = 'https://script.google.com/macros/s/AKfycbwL_6RKsqRnisy0T1XM9yiJlaPqX2TWQ5D_l9Oo6Hikk0GfoHLsaSVLXFvzPASzay1XUw/exec?'+queryStr;
       document.body.appendChild(iframe);
     
       var enqname = document.getElementById("fname").value;;
