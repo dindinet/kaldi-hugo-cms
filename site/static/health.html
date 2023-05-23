@@ -259,6 +259,9 @@
 	</div>
 
 </footer>
+<style>
+  iframe{display:none;width:0;height:0;}
+</style>
 <script>
 function getDate() {
   var today = new Date();
@@ -303,7 +306,6 @@ window.onload = function() {
       //document.body.appendChild(script);
 
       var iframe = document.createElement('iframe');
-      var html = '<body style="display:none;">Foo</body>';
       iframe.src = 'https://script.google.com/macros/s/AKfycbysKPrvoONURgvRXXSFbTG400rU2OIBpnmG4CJ3J9zeTEzsWOl-mNIGxu1wNrGMxOeLUw/exec?'+queryStr;
       document.body.appendChild(iframe);
     
