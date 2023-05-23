@@ -295,6 +295,8 @@ window.onload = function() {
       let data = new FormData(form);
    
       const queryStr = new URLSearchParams(data).toString();
+
+      console.log('https://script.google.com/macros/s/AKfycbzJqBgfuMsQHL55nKo_xbZe_I4W8gTP74ATYZn_bpzlwZaObEphcFtikVB3Mu1Qwclfug/exec?callback=callresult&'+queryStr);
   
       var script = document.createElement('script');
       script.src = 'https://script.google.com/macros/s/AKfycbzJqBgfuMsQHL55nKo_xbZe_I4W8gTP74ATYZn_bpzlwZaObEphcFtikVB3Mu1Qwclfug/exec?callback=callresult&'+queryStr;
