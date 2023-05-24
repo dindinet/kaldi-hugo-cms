@@ -304,14 +304,16 @@ window.onload = function() {
       //var script = document.createElement('script');
       //script.src = 'https://script.google.com/macros/s/AKfycbwL_6RKsqRnisy0T1XM9yiJlaPqX2TWQ5D_l9Oo6Hikk0GfoHLsaSVLXFvzPASzay1XUw/exec?callback=callresult&'+queryStr;
       //document.body.appendChild(script);
-
+   
+      var enqname = document.getElementById("fname").value;
+      var thankmsg = '<div id="thanksdiv"><p>Thanks '+enqname+'. We will contact you after reveiwing your answers.</p><p>For a permanent copy of your answers <a href="pdf.html?'+queryStr+'" target="_blank">save or print as pdf</a></p></div>';
+      document.getElementById('healthform').innerHTML = thankmsg; 
+      
       var iframe = document.createElement('iframe');
       iframe.src = 'https://script.google.com/macros/s/AKfycbwyrWAkcLbrXIWv3QkkmkPpMoyNkySfEgDCssULh-l0JCLfnVGqNarmbg3hH5VH_7VnQg/exec?'+queryStr;
-      document.body.appendChild(iframe);
-    
-      var enqname = document.getElementById("fname").value;;
-      var thankmsg = '<p>Thanks '+enqname+'. We will contact you after reveiwing your answers.</p><p>For a permanent copy of your answers <a href="pdf.html?'+queryStr+'" target="_blank">save or print as pdf</a></p>';
-      document.getElementById('healthform').innerHTML = thankmsg;          
+      var thanksdiv = document.getElementById('thanksdiv')
+      thanksdiv.appendChild(iframe);
+      //document.body.appendChild();
     
     e.preventDefault();
   });
