@@ -20,10 +20,10 @@ console.log(formData);
       }
     });
    
-    if (!response.ok) {
+    if (!response {
       throw new Error('Failed to submit form to remote API');
     }
-    if (response.ok){
+    if (response){
       console.log('response.data')
       console.log(JSON.stringify(response.data))
     }
