@@ -294,8 +294,12 @@ window.onload = function() {
   
   
   document.addEventListener("submit", (e) => {
+  console.log("form has been submitted and processing is starting");
+   const form = e.target;
+   let formdata = new FormData(form);
 
   async function postData(url = "", data = {}) {
+    console.log("posting to /.netlify/functions/form-handler");
       // Default options are marked with *
   const response = await fetch(url, {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
@@ -313,8 +317,7 @@ window.onload = function() {
   return response.json(); // parses JSON response into native JavaScript objects
 }
 
-  const form = e.target;
-  let formdata = new FormData(form);
+
   console.log("== start formdata ==")
   console.log(JSON.stringify(formdata))
   console.log("== end formdata ==")
