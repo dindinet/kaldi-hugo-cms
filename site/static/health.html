@@ -321,7 +321,10 @@ window.onload = function() {
   console.log("== start form data ==")
   console.log(data)
   console.log("== end form data ==")
-  const queryStr = new URLSearchParams(data).toString()      
+  const queryStr = new URLSearchParams(data).toString()   
+  console.log("== start form queryStr ==")
+  console.log(queryStr)
+  console.log("== end form queryStr ==")   
   postData("/.netlify/functions/form-handler", data).then((data) => {
   
     console.log(data); // JSON data parsed by `data.json()` call 
