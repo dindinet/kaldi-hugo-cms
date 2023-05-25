@@ -9,6 +9,7 @@ exports.handler = async function(event) {
   }
 
   const formData = JSON.parse(event.body);
+  console.log('formData');
 console.log(formData);
   try {
     const response = await fetch('https://script.google.com/macros/s/AKfycbxCg6EMHb1lk5HhFr0VoGIbUw8mylhq9OSpyFGmnuiMbtkAGKgm0XE19puQWebqwJPW/exec', {
@@ -18,11 +19,14 @@ console.log(formData);
         'Content-Type': 'application/json'
       }
     });
-    console.log(JSON.stringify(response.data))
+   
     if (!response.ok) {
       throw new Error('Failed to submit form to remote API');
     }
-
+    if (response.ok){
+      console.log('response.data')
+      console.log(JSON.stringify(response.data))
+    }
     return {
       statusCode: 200,
       headers: {"Content-Type": "application/json"},
