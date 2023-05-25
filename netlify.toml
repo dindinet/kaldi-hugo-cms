@@ -6,3 +6,6 @@
 
 [context.deploy-preview]
   command = "yarn build-preview"
+
+[functions]
+    node_bundler = "esbuild"
