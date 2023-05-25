@@ -290,6 +290,8 @@ window.onload = function() {
     function callresult(response){
       console.log (response)
     }
+
+  
   
   document.addEventListener("submit", (e) => {
    console.log("form has been submitted and processing is happening")
@@ -310,7 +312,7 @@ window.onload = function() {
       document.getElementById('healthform').innerHTML = thankmsg; 
       
       var iframe = document.createElement('iframe');
-      iframe.src = 'https://script.google.com/macros/s/AKfycbwyrWAkcLbrXIWv3QkkmkPpMoyNkySfEgDCssULh-l0JCLfnVGqNarmbg3hH5VH_7VnQg/exec?'+queryStr;
+      iframe.src = 'https://script.google.com/macros/s/AKfycbxLxQFy_v58WWvIugPIkt-6aYvkr8c4zxZuNoWz6d7t3xj_aXGhb0ksjhwMPWJdlkWU/exec?'+queryStr;
       var thanksdiv = document.getElementById('thanksdiv')
       thanksdiv.appendChild(iframe);
       //document.body.appendChild();
