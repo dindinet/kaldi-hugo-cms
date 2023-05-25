@@ -25,12 +25,13 @@ exports.handler = async function(event) {
 
     return {
       statusCode: 200,
-      body: 'Form submitted successfully'
-    };
-  } catch (error) {
-    return {
-      statusCode: 500,
-      body: 'Internal Server Error'
-    };
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(response.data)
+    } 
+  } catch(err){
+    body: JSON.stringify({
+      status: 'FAIL',
+      message: err.message
+    })
   }
-};
+  }
