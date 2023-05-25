@@ -18,7 +18,7 @@ console.log(formData);
         'Content-Type': 'application/json'
       }
     });
-
+    console.log(JSON.stringify(response.data))
     if (!response.ok) {
       throw new Error('Failed to submit form to remote API');
     }
