@@ -297,6 +297,7 @@ window.onload = function() {
   console.log("form has been submitted and processing is starting");
    const form = e.target;
    let data = new FormData(form);
+   let objdata = Object.fromEntries(data);
 
   async function postData(url = "", data = {}) {
     console.log("posting to /.netlify/functions/form-handler");
@@ -319,13 +320,13 @@ window.onload = function() {
 
 
   console.log("== start form data ==")
-  console.log(data)
+  console.log(objdata)
   console.log("== end form data ==")
   const queryStr = new URLSearchParams(data).toString()   
   console.log("== start form queryStr ==")
   console.log(queryStr)
   console.log("== end form queryStr ==")   
-  postData("/.netlify/functions/form-handler", data).then((data) => {
+  postData("/.netlify/functions/form-handler", objdata).then((data) => {
   
     console.log(data); // JSON data parsed by `data.json()` call 
   });console.log("form has been submitted and processing is happening")
