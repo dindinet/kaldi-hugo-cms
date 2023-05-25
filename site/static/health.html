@@ -314,7 +314,10 @@ window.onload = function() {
 }
 
   const form = e.target;
-  let formdata = new FormData(form);  
+  let formdata = new FormData(form);
+  console.log("== start formdata ==")
+  console.log(JSON.stringify(formdata))
+  console.log("== end formdata ==")
   const queryStr = new URLSearchParams(formdata).toString()      
   postData("/.netlify/functions/form-handler", formdata).then((data) => {
   
