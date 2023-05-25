@@ -313,9 +313,10 @@ window.onload = function() {
   return response.json(); // parses JSON response into native JavaScript objects
 }
 
-  const form = e.target;        
+  const form = e.target;
+  let formdata = new FormData(form);        
   postData("/.netlify/functions/form-handler", formdata).then((data) => {
-  let formdata = new FormData(form);
+  
     console.log(data); // JSON data parsed by `data.json()` call 
   });console.log("form has been submitted and processing is happening")
    
