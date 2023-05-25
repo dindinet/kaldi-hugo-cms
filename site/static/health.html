@@ -294,30 +294,41 @@ window.onload = function() {
   
   
   document.addEventListener("submit", (e) => {
-   console.log("form has been submitted and processing is happening")
 
+  async function postData(url = "", data = {}) {
+      // Default options are marked with *
+  const response = await fetch(url, {
+      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      mode: "cors", // no-cors, *cors, same-origin
+      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: "same-origin", // include, *same-origin, omit
+      headers: {
+        "Content-Type": "application/json",
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    redirect: "follow", // manual, *follow, error
+    referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(data), // body data type must match "Content-Type" header
+  });
+  return response.json(); // parses JSON response into native JavaScript objects
+}
 
-      const form = e.target;        
-  
-      let data = new FormData(form);
+  const form = e.target;        
+  postData("/.netlify/functions/form-handler", formdata).then((data) => {
+  let formdata = new FormData(form);
+    console.log(data); // JSON data parsed by `data.json()` call 
+  });console.log("form has been submitted and processing is happening")
    
-      const queryStr = new URLSearchParams(data).toString();
-
+    /*const queryStr = new URLSearchParams(formdata).toString();
       console.log('https://script.google.com/macros/s/AKfycbwyrWAkcLbrXIWv3QkkmkPpMoyNkySfEgDCssULh-l0JCLfnVGqNarmbg3hH5VH_7VnQg/exec?'+queryStr);
-  
       var script = document.createElement('script');
       script.src = 'https://script.google.com/macros/s/AKfycbxCg6EMHb1lk5HhFr0VoGIbUw8mylhq9OSpyFGmnuiMbtkAGKgm0XE19puQWebqwJPW/exec?'+queryStr;
       document.body.appendChild(script);
-   
-      var enqname = document.getElementById("fname").value;
-      var thankmsg = '<div id="thanksdiv"><p>Thanks '+enqname+'. We will contact you after reveiwing your answers.</p><p>For a permanent copy of your answers <a href="pdf.html?'+queryStr+'" target="_blank">save or print as pdf</a></p></div>';
-      document.getElementById('healthform').innerHTML = thankmsg; 
-      
-      //var iframe = document.createElement('iframe');
-      //iframe.src = 'https://script.google.com/macros/s/AKfycbxLxQFy_v58WWvIugPIkt-6aYvkr8c4zxZuNoWz6d7t3xj_aXGhb0ksjhwMPWJdlkWU/exec?'+queryStr;
-      //var thanksdiv = document.getElementById('thanksdiv')
-      //thanksdiv.appendChild(iframe);
-      ////document.body.appendChild();
+    */
+  var enqname = document.getElementById("fname").value;
+  var thankmsg = '<div id="thanksdiv"><p>Thanks '+enqname+'. We will contact you after reveiwing your answers.</p><p>For a permanent copy of your answers <a href="pdf.html?'+queryStr+'" target="_blank">save or print as pdf</a></p></div>';
+  document.getElementById('healthform').innerHTML = thankmsg; 
+
     
     e.preventDefault();
   });
