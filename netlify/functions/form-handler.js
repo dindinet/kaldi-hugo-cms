@@ -8,8 +8,8 @@ exports.handler = async function(event) {
  //   };
  // }
 
-  //const formData = JSON.parse(event.body);
-  //console.log('formData');
+  const formData = JSON.parse(event.body);
+  console.log('formData');
   return {
     statusCode: 302,
     headers: {
