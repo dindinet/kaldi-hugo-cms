@@ -8,6 +8,11 @@ exports.handler = async function(event) {
  //   };
  // }
 
+
+
+
+}
+
   //const formData = JSON.parse(event.body);
   //console.log('formData');
   if (event.httpMethod == 'GET') {
@@ -23,8 +28,18 @@ exports.handler = async function(event) {
 if (event.httpMethod == 'POST') {
   console.log('POST')
   var qstring = new URLSearchParams(event.body)
-  let formdata = Object.fromEntries(qstring);
+  var formdata = Object.fromEntries(qstring);
   console.log(formdata)
+  theConditionsWeFound = [];
+  for (const [key, value] of Object.entries(formdata))
+   if(key.includes('cb_conditions_')){
+     theConditionsWeFound.push(key.replace('cb_conditions_', '').replace(/_/g,' '));
+     delete formdata[key];
+   }
+   formdata['cb_conditions'] = theConditionsWeFound.toString();
+
+   console.log(formdata)
+
   return {
     statusCode: 302,
     headers: {
