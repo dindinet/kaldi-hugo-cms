@@ -1,8 +1,12 @@
+import fetch from "node-fetch"
+import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
+
+/*
 const fetch = require('node-fetch');
 const Recipient = require("mailersend").Recipient;
 const EmailParams = require("mailersend").EmailParams;
 const MailerSend = require("mailersend");
-
+*/
 exports.handler = async function(event) {
   //if (event.httpMethod !== 'GET') {
  //   return {
