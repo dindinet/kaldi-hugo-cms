@@ -22,7 +22,7 @@ exports.handler = async function(event) {
 };
 if (event.httpMethod == 'POST') {
   console.log('POST')
-  console.log(JSON.stringify(event.body));
+  console.log(JSON.parse(event.body));
   return {
     statusCode: 302,
     headers: {
