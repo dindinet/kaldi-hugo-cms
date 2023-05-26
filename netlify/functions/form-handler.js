@@ -1,5 +1,5 @@
 import fetch from "node-fetch"
-import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
+//import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
 
 /*
 const fetch = require('node-fetch');
@@ -46,6 +46,7 @@ if (event.httpMethod == 'POST') {
 var textbody = `name: ${formdata.fname} ${formdata.lname}\n email: ${formdata.email}\n phone: ${formdata.phone}\n`
 var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.email}<br> phone: ${formdata.phone}<br>`
 
+/*
 const mailersend = new MailerSend({
   api_key: process.env.MAILERSEND_KEY,
 });
@@ -65,7 +66,7 @@ const emailParams = new EmailParams()
 mailersend.send(emailParams);
 
 console.log(emailParams)
-   
+ */  
 
   return {
     statusCode: 302,
