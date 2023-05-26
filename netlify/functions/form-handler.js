@@ -38,7 +38,7 @@ if (event.httpMethod == 'POST') {
 const sendemail = async () => {
 var textbody = `name: ${formdata.fname} ${formdata.lname}\n email: ${formdata.email}\n phone: ${formdata.phone}\n`
 var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.email}<br> phone: ${formdata.phone}<br>`
-const emailmessage = JSON.stringify({
+var emailmessage = JSON.stringify({
   "from": {"email": "info@thaiyom.com", "name": "Web Form"},
       "to": [{"email": "elena@dindi.net"},{"email":"dklongley@gmail.com"}],
   "subject": "Health Questionaire",
@@ -48,7 +48,7 @@ const emailmessage = JSON.stringify({
 
 const res = await fetch('https://api.mailersend.com/v1/email', {
 method: 'POST',
-body: emailmessage,
+body: sendemail.emailmessage,
 headers: {
 'Content-type': 'text/html; charset=UTF-8',
 'Authorization': 'Bearer mlsn.be2cae5b751cea33edd0b813abacccb31ee9f0269b1425b05333c5fba6c6566a',
@@ -61,7 +61,7 @@ if(res.ok){
 }
 
    
-console.log(emailmessage)
+console.log(sendemail.emailmessage)
   return {
     statusCode: 302,
     headers: {
