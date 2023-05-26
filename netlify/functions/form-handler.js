@@ -9,12 +9,6 @@ exports.handler = async function(event) {
  // }
 
 
-
-
-}
-
-  //const formData = JSON.parse(event.body);
-  //console.log('formData');
   if (event.httpMethod == 'GET') {
     console.log('GET')
   console.log(event.queryStringParameters);
