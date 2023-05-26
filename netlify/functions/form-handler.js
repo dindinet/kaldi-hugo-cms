@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 exports.handler = async function(event) {
-  if (event.httpMethod !== 'POST') {
+  if (event.httpMethod !== 'GET') {
     return {
       statusCode: 405,
       body: 'Method Not Allowed'
@@ -10,6 +10,12 @@ exports.handler = async function(event) {
 
   const formData = JSON.parse(event.body);
   console.log('formData');
+  return {
+    statusCode: 302,
+    headers: {
+        "Location": "/thanks.html?" + new URLSearchParams(event.queryStringParameters),
+    },
+};
   /*
   try {
     const response = await fetch('https://script.google.com/macros/s/AKfycbxCg6EMHb1lk5HhFr0VoGIbUw8mylhq9OSpyFGmnuiMbtkAGKgm0XE19puQWebqwJPW/exec', {
