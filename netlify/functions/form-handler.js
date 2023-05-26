@@ -32,7 +32,7 @@ if (event.httpMethod == 'POST') {
    }
    formdata['cb_conditions'] = theConditionsWeFound.toString();
 
-   console.log(formdata)
+   console.log(JSON.stringify(formdata))
 
   return {
     statusCode: 302,
