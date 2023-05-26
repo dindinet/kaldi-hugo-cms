@@ -35,6 +35,7 @@ if (event.httpMethod == 'POST') {
    console.log(JSON.stringify(formdata))
 
 // Send email using mailersend API
+const sendemail = async () => {
 var textbody = `name: ${formdata.fname} ${formdata.lname}\n email: ${formdata.email}\n phone: ${formdata.phone}\n`
 var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.email}<br> phone: ${formdata.phone}<br>`
 var emailmessage = JSON.stringify({
@@ -45,7 +46,7 @@ var emailmessage = JSON.stringify({
   "html": htmlbody
 })
 
-fetch('https://api.mailersend.com/v1/email', {
+const res = await fetch('https://api.mailersend.com/v1/email', {
 method: 'POST',
 body: emailmessage,
 headers: {
@@ -53,8 +54,12 @@ headers: {
 'Authorization': 'Bearer mlsn.be2cae5b751cea33edd0b813abacccb31ee9f0269b1425b05333c5fba6c6566a',
 },
 })
-.then((response) => response.json())
-.then((json) => console.log(json));
+if(res.ok){
+  const data = await res.json();
+  console.log(data);
+}
+}
+
    
 console.log(emailmessage)
   return {
