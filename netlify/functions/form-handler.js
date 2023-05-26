@@ -22,7 +22,9 @@ exports.handler = async function(event) {
 };
 if (event.httpMethod == 'POST') {
   console.log('POST')
-  console.log(event);
+  var qstring = new URLSearchParams(event.body)
+  let formdata = Object.fromEntries(qstring);
+  console.log(formdata)
   return {
     statusCode: 302,
     headers: {
