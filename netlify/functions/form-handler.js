@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+const fetch = require('node-fetch');
 
 exports.handler = async function(event) {
   if (event.httpMethod !== 'POST') {
@@ -10,7 +10,6 @@ exports.handler = async function(event) {
 
   const formData = JSON.parse(event.body);
   console.log('formData');
-console.log(formData);
   try {
     const response = await fetch('https://script.google.com/macros/s/AKfycbxCg6EMHb1lk5HhFr0VoGIbUw8mylhq9OSpyFGmnuiMbtkAGKgm0XE19puQWebqwJPW/exec', {
       method: 'POST',
