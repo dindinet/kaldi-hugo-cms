@@ -1,4 +1,7 @@
 const fetch = require('node-fetch');
+const Recipient = require("mailersend").Recipient;
+const EmailParams = require("mailersend").EmailParams;
+const MailerSend = require("mailersend");
 
 exports.handler = async function(event) {
   //if (event.httpMethod !== 'GET') {
@@ -35,32 +38,29 @@ if (event.httpMethod == 'POST') {
    console.log(JSON.stringify(formdata))
 
 // Send email using mailersend API
-const sendemail = async () => {
+
 var textbody = `name: ${formdata.fname} ${formdata.lname}\n email: ${formdata.email}\n phone: ${formdata.phone}\n`
 var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.email}<br> phone: ${formdata.phone}<br>`
-var emailmessage = JSON.stringify({
-  "from": {"email": "info@thaiyom.com", "name": "Web Form"},
-      "to": [{"email": "elena@dindi.net"},{"email":"dklongley@gmail.com"}],
-  "subject": "Health Questionaire",
-  "text": textbody,
-  "html": htmlbody
-})
 
-const res = await fetch('https://api.mailersend.com/v1/email', {
-method: 'POST',
-body: emailmessage,
-headers: {
-'Content-type': 'text/html; charset=UTF-8',
-'Authorization': 'Bearer mlsn.be2cae5b751cea33edd0b813abacccb31ee9f0269b1425b05333c5fba6c6566a',
-},
-})
-console.log(emailmessage)
-if(res.ok){
-  const data = await res.json();
-  console.log(data);
-}
-}
+const mailersend = new MailerSend({
+  api_key: process.env.MAILERSEND_KEY,
+});
 
+const recipients = [new Recipient("elena@dindi.net", "Your Client")];
+const bcc = [ new Recipient("your_bcc@client.com", "Your Client BCC")];
+
+const emailParams = new EmailParams()
+  .setFrom("info@thaiyom.com")
+  .setFromName("Web Form")
+  .setRecipients(recipients)
+  .setBcc(bcc)
+  .setSubject("Health Questionaire")
+  .setHtml(textbody)
+  .setText(htmlbody);
+
+mailersend.send(emailParams);
+
+console.log(emailParams)
    
 
   return {
