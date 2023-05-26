@@ -10,6 +10,7 @@ exports.handler = async function(event) {
 
   //const formData = JSON.parse(event.body);
   //console.log('formData');
+  if (event.httpMethod == 'GET') {
   console.log(event.queryStringParameters);
   return {
     statusCode: 302,
@@ -17,4 +18,14 @@ exports.handler = async function(event) {
         "Location": "/thanks.html?" + new URLSearchParams(event.queryStringParameters),
     },
   };
+};
+if (event.httpMethod == 'POST') {
+  console.log(event.body);
+  return {
+    statusCode: 302,
+    headers: {
+        "Location": "/thanks.html?" + new URLSearchParams(event.body),
+    },
+  };
+};
 }
