@@ -302,7 +302,7 @@ window.onload = function() {
   function postData(url = "", data = {}) {
     console.log("posting to /.netlify/functions/form-handler");
       // Default options are marked with *
-  const response = await fetch(url, {
+  const response = fetch(url, {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       headers: {
         "Content-Type": "application/json"
