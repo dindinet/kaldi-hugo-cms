@@ -48,12 +48,13 @@ var emailmessage = JSON.stringify({
 
 const res = await fetch('https://api.mailersend.com/v1/email', {
 method: 'POST',
-body: sendemail.emailmessage,
+body: emailmessage,
 headers: {
 'Content-type': 'text/html; charset=UTF-8',
 'Authorization': 'Bearer mlsn.be2cae5b751cea33edd0b813abacccb31ee9f0269b1425b05333c5fba6c6566a',
 },
 })
+console.log(emailmessage)
 if(res.ok){
   const data = await res.json();
   console.log(data);
@@ -61,7 +62,7 @@ if(res.ok){
 }
 
    
-console.log(sendemail.emailmessage)
+
   return {
     statusCode: 302,
     headers: {
