@@ -54,7 +54,7 @@ headers: {
 .then((response) => response.json())
 .then((json) => console.log(json));
    
-console.log('after email send')
+console.log(emailmessage)
   return {
     statusCode: 302,
     headers: {
