@@ -257,6 +257,66 @@
 	</div>
 
 </footer>
-
+<script>
+    function getDate() {
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth()+1; //January is 0!
+      var yyyy = today.getFullYear();
+    
+      if(dd<10) {
+          dd = '0'+dd
+      } 
+    
+      if(mm<10) {
+          mm = '0'+mm
+      } 
+      today = yyyy + '-' + mm + '-' + dd;
+    //|\\console.log(today);
+      //document.getElementById("date").value = today;
+      document.getElementById("agree_date").value = today;
+    }
+    
+    
+    window.onload = function() {
+      getDate();
+    };
+     
+    if(location.search.length > 20 ){
+    const urlParams = new URLSearchParams(location.search);
+    
+    for (const [key, qsivalue] of urlParams) {
+      //|\\console.log(`${key}:${qsivalue}`);
+        if(key.slice(0, 3) == 'rb_'){
+           document.getElementById(qsivalue).checked = true
+        }
+        else if(key.slice(0, 3) == 'cb_'){
+         document.getElementById(key).checked = true
+        } else{
+        document.getElementById(key).value = qsivalue
+        }
+     }
+    }
+    
+        var pairs = location.search.slice(1).split('&');
+        
+        var result = {};
+        pairs.forEach(function(pair) {
+            pair = pair.split('=');
+            result[pair[0]] = decodeURIComponent(pair[1] || '');
+        });
+    
+        theJSONweWant = result;//JSON.parse(JSON.stringify(result));
+    
+        theConditionsWeFound = [];
+        for (const [key, value] of Object.entries(theJSONweWant)) {
+          if(key.includes('cb_conditions_')){
+            theConditionsWeFound.push(key.replace('cb_conditions_', '').replace(/_/g,' '));
+            delete theJSONweWant[key];
+          }
+        }
+        theJSONweWant['conditions'] = theConditionsWeFound;    
+    
+    </script>
 </body>
 </html>
