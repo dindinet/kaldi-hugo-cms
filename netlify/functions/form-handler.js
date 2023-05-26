@@ -35,8 +35,8 @@ if (event.httpMethod == 'POST') {
    console.log(JSON.stringify(formdata))
 
 // Send email using mailersend API
-var textbody = `name: {$formdata.fname} {$formdata.lname}\n email: {$formdata.email}\n phone: {$formdata.phone}\n`
-var htmlbody = `name: {$formdata.fname} {$formdata.lname}<br> email: {$formdata.email}<br> phone: {$formdata.phone}<br>`
+var textbody = `name: ${formdata.fname} ${formdata.lname}\n email: ${formdata.email}\n phone: ${formdata.phone}\n`
+var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.email}<br> phone: ${formdata.phone}<br>`
 var emailmessage = JSON.stringify({
   "from": {"email": "info@thaiyom.com", "name": "Web Form"},
       "to": [{"email": "elena@dindi.net"},{"email":"dklongley@gmail.com"}],
