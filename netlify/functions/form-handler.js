@@ -48,7 +48,7 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
     };
   }
 
- /* try {
+  //try {
 
     const apiUrl = 'https://api.mailersend.com/v1/email'; // MailerSend API endpoint
 
@@ -62,7 +62,8 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
 
     const apiKey = process.env.MAILERSEND_KEY; // Replace with your MailerSend API key
     console.log(requestBody)
-    const response = await fetch(apiUrl, {
+    //const response = await 
+    fetch(apiUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -71,6 +72,7 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
       body: JSON.stringify(requestBody),
     });
 
+   // console.log(response)
    //const responseData = await response.json();
    // console.log(responseData)
     //return {
@@ -78,7 +80,7 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
      // body: JSON.stringify(responseData),
     //}; 
   
-  
+  /*
   catch (error) {
     console.error('Error sending email:', error);
 
@@ -90,7 +92,7 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
   */
   
 
-};
+}
 
 return {
     statusCode: 302,
