@@ -29,8 +29,7 @@ if (event.httpMethod == 'POST') {
    console.log(JSON.stringify(formdata))
 
 
-var textbody = `name: ${formdata.fname} ${formdata.lname}\n email: ${formdata.email}\n phone: ${formdata.phone}\n`
-var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.email}<br> phone: ${formdata.phone}<br>`
+
 
   try {
     const apiUrl = 'https://script.google.com/macros/s/AKfycbz0yEPTZBGeGQpYSqOZ9-irRAOK4LbRxAwQrDkvpqU44MBVi_vExwRD3IRqK0QVMQXT/exec?'+qstring; // Replace with the API endpoint you want to fetch
@@ -48,13 +47,17 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
     };
   }
 
+  var textbody = `name: ${formdata.fname} ${formdata.lname}\n email: ${formdata.email}\n phone: ${formdata.phone}\n`
+  var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.email}<br> phone: ${formdata.phone}<br><br><a href="https://airtable.com/appBRoeXT5DKvfDLa/tblzoCa2sjvxKgiaD/viwzuaSUywHuSl7Nh/${data.healthRecordid}?blocks=hide">View in Database</a>` 
+
   //try {
 
     const apiUrl = 'https://api.mailersend.com/v1/email'; // MailerSend API endpoint
 
     const requestBody = {
-      to: [{ email: process.env.TO_EMAIL }], // Replace with recipient's email address
-      from: { email: process.env.FROM_EMAIL }, // Replace with sender's email address
+      to: [{ email: process.env.TO_EMAIL }],
+      bcc: [{ email: process.env.BCC_EMAIL }],
+      from: { email: process.env.FROM_EMAIL }, 
       subject: 'Health Questionaire Form',
       text: textbody,
       html: htmlbody,
