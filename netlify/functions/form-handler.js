@@ -47,6 +47,44 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
       body: JSON.stringify({ message: 'Error fetching data' }),
     };
   }
+
+  try {
+    const apiUrl = 'https://api.mailersend.com/v1/email'; // MailerSend API endpoint
+
+    const requestBody = {
+      to: [{ email: process.env.TO_EMAIL }], // Replace with recipient's email address
+      from: process.env.FROM_EMAIL, // Replace with sender's email address
+      subject: 'Health Questionaire Form',
+      text: textbody,
+      html: htmlbody,
+    };
+
+    const apiKey = process.env.MAILERSEND_KEY; // Replace with your MailerSend API key
+
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify(requestBody),
+    });
+
+    const responseData = await response.json();
+
+    /*return {
+      statusCode: response.status,
+      body: JSON.stringify(responseData),
+    }; */
+  } catch (error) {
+    console.error('Error sending email:', error);
+
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ message: 'Error sending email' }),
+    };
+  }
+
 };
 
 return {
