@@ -36,6 +36,7 @@ if (event.httpMethod == 'POST') {
 
     const response = await fetch(apiUrl);
     const data = await response.json();
+    var healthRecordId = data.healthRecordid
     console.log(data.healthRecordid)
     
   } catch (error) {
@@ -48,7 +49,7 @@ if (event.httpMethod == 'POST') {
   }
 
   var textbody = `name: ${formdata.fname} ${formdata.lname}\n email: ${formdata.email}\n phone: ${formdata.phone}\n`
-  var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.email}<br> phone: ${formdata.phone}<br><br><a href="https://airtable.com/appBRoeXT5DKvfDLa/tblzoCa2sjvxKgiaD/viwzuaSUywHuSl7Nh/${data.healthRecordid}?blocks=hide">View in Database</a>` 
+  var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.email}<br> phone: ${formdata.phone}<br><br><a href="https://airtable.com/appBRoeXT5DKvfDLa/tblzoCa2sjvxKgiaD/viwzuaSUywHuSl7Nh/${healthRecordId}?blocks=hide">View in Database</a>` 
 
   //try {
 
