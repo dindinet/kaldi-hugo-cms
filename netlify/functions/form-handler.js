@@ -54,7 +54,7 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
 
     const requestBody = {
       to: [{ email: process.env.TO_EMAIL }], // Replace with recipient's email address
-      from: process.env.FROM_EMAIL, // Replace with sender's email address
+      from: { email: process.env.FROM_EMAIL }, // Replace with sender's email address
       subject: 'Health Questionaire Form',
       text: textbody,
       html: htmlbody,
