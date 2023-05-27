@@ -71,7 +71,8 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
       body: JSON.stringify(requestBody),
     });
 
-   console.log(response)
+   console.log(JSON.stringify(response))
+   
    //const responseData = await response.json();
    // console.log(responseData)
     //return {
