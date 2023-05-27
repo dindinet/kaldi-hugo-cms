@@ -77,7 +77,9 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
       statusCode: response.status,
       body: JSON.stringify(responseData),
     }; */
-  } catch (error) {
+  } 
+  /*
+  catch (error) {
     console.error('Error sending email:', error);
 
     return {
@@ -85,6 +87,7 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
       body: JSON.stringify({ message: 'Error sending email' }),
     };
   }
+  */
 
 };
 
