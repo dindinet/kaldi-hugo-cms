@@ -37,7 +37,7 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
 
     const response = await fetch(apiUrl);
     const data = await response.json();
-    console.log(data)
+    console.log(data.healthRecordid)
     
   } catch (error) {
     console.error('Error fetching data:', error);
