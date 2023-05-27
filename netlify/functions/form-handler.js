@@ -48,7 +48,7 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
     };
   }
 
- // try {
+ /* try {
 
     const apiUrl = 'https://api.mailersend.com/v1/email'; // MailerSend API endpoint
 
@@ -71,14 +71,14 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
       body: JSON.stringify(requestBody),
     });
 
-    const responseData = await response.json();
-    console.log(responseData)
-    /*return {
-      statusCode: response.status,
-      body: JSON.stringify(responseData),
-    }; */
+   //const responseData = await response.json();
+   // console.log(responseData)
+    //return {
+    //  statusCode: response.status,
+     // body: JSON.stringify(responseData),
+    //}; 
   
-  /*
+  
   catch (error) {
     console.error('Error sending email:', error);
 
