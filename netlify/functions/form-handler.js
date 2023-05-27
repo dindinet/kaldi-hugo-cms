@@ -18,7 +18,7 @@ exports.handler = async function(event) {
 
   if (event.httpMethod == 'GET') {
     console.log('GET')
-  console.log(event.queryStringParameters);
+    console.log(event.queryStringParameters);
   return {
     statusCode: 302,
     headers: {
@@ -45,6 +45,29 @@ if (event.httpMethod == 'POST') {
 
 var textbody = `name: ${formdata.fname} ${formdata.lname}\n email: ${formdata.email}\n phone: ${formdata.phone}\n`
 var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.email}<br> phone: ${formdata.phone}<br>`
+
+const fetch = require('node-fetch');
+
+
+  try {
+    const apiUrl = 'https://script.google.com/macros/s/AKfycbz0yEPTZBGeGQpYSqOZ9-irRAOK4LbRxAwQrDkvpqU44MBVi_vExwRD3IRqK0QVMQXT/exec?'+qstring; // Replace with the API endpoint you want to fetch
+
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify(data),
+    };
+  } catch (error) {
+    console.error('Error fetching data:', error);
+
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ message: 'Error fetching data' }),
+    };
+  }
+};
 
 /*
 const mailersend = new MailerSend({
