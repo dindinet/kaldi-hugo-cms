@@ -49,6 +49,7 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
   }
 
   try {
+
     const apiUrl = 'https://api.mailersend.com/v1/email'; // MailerSend API endpoint
 
     const requestBody = {
@@ -60,18 +61,18 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
     };
 
     const apiKey = process.env.MAILERSEND_KEY; // Replace with your MailerSend API key
-
+    console.log(apiKey)
     const response = await fetch(apiUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${apiKey}`,
+        'Authorization': `Bearer ${apiKey}`,
       },
       body: JSON.stringify(requestBody),
     });
 
     const responseData = await response.json();
-
+    console.log(responseData)
     /*return {
       statusCode: response.status,
       body: JSON.stringify(responseData),
