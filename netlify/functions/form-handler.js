@@ -1,19 +1,6 @@
 const fetch = require('node-fetch');
-//import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
 
-/*
-const fetch = require('node-fetch');
-const Recipient = require("mailersend").Recipient;
-const EmailParams = require("mailersend").EmailParams;
-const MailerSend = require("mailersend");
-*/
 exports.handler = async function(event) {
-  //if (event.httpMethod !== 'GET') {
- //   return {
- //     statusCode: 405,
- //     body: 'Method Not Allowed'
- //   };
- // }
 
 
   if (event.httpMethod == 'GET') {
@@ -41,7 +28,6 @@ if (event.httpMethod == 'POST') {
 
    console.log(JSON.stringify(formdata))
 
-// Send email using mailersend API
 
 var textbody = `name: ${formdata.fname} ${formdata.lname}\n email: ${formdata.email}\n phone: ${formdata.phone}\n`
 var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.email}<br> phone: ${formdata.phone}<br>`
@@ -51,11 +37,8 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
 
     const response = await fetch(apiUrl);
     const data = await response.json();
-
-    return {
-      statusCode: 200,
-      body: JSON.stringify(data),
-    };
+    console.log(data)
+    
   } catch (error) {
     console.error('Error fetching data:', error);
 
@@ -66,33 +49,11 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
   }
 };
 
-/*
-const mailersend = new MailerSend({
-  api_key: process.env.MAILERSEND_KEY,
-});
-
-const recipients = [new Recipient("elena@dindi.net", "Your Client")];
-const bcc = [ new Recipient("your_bcc@client.com", "Your Client BCC")];
-
-const emailParams = new EmailParams()
-  .setFrom("info@thaiyom.com")
-  .setFromName("Web Form")
-  .setRecipients(recipients)
-  .setBcc(bcc)
-  .setSubject("Health Questionaire")
-  .setHtml(textbody)
-  .setText(htmlbody);
-
-mailersend.send(emailParams);
-
-console.log(emailParams)
- */  
-
-  return {
+return {
     statusCode: 302,
     headers: {
         "Location": "/thanks.html?" + new URLSearchParams(event.body),
     },
   };
 };
-}
+
