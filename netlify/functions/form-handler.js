@@ -61,7 +61,7 @@ var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.
     };
 
     const apiKey = process.env.MAILERSEND_KEY; // Replace with your MailerSend API key
-    console.log(apiKey)
+    console.log(requestBody)
     const response = await fetch(apiUrl, {
       method: 'POST',
       headers: {
