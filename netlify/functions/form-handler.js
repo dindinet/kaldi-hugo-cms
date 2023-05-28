@@ -45,8 +45,10 @@ if (event.httpMethod == 'POST') {
       },
       body: JSON.stringify(atdata), 
     });
-console.log('Here comes the newHealthRecord')
-console.log(JSON.stringify(newHealthRecord))
+    let returnedrecord = await newHealthRecord.json();
+console.log('Here comes the returnedrecord')
+console.log(JSON.stringify(returnedrecord))
+console.log(JSON.stringify(returnedrecord.id))
 //var healthRecordId = newHealthRecord.id
 //console.log(healthRecordId)
 
