@@ -46,8 +46,7 @@ if (event.httpMethod == 'POST') {
       body: JSON.stringify(atdata), 
     });
 
-var returnedHealthrecord = JSON.parse(newHealthRecord)
-var healthRecordId = returnedHealthrecord.id
+var healthRecordId = newHealthRecord.id
 console.log(healthRecordId)
 
 // STARTGoogle Apps Script 
