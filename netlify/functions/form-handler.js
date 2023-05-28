@@ -45,7 +45,8 @@ if (event.httpMethod == 'POST') {
       },
       body: JSON.stringify(atdata), 
     });
-
+    console.log('Here comes the newHealthRecord')
+console.log(newHealthRecord)
 var healthRecordId = newHealthRecord.records[0].id
 console.log(healthRecordId)
 
