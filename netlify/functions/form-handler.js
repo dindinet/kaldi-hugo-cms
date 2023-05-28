@@ -28,9 +28,24 @@ if (event.httpMethod == 'POST') {
 
    console.log(JSON.stringify(formdata))
 
+// Airtable  POST
 
+    var health_url = 'https://api.airtable.com/v0/appBRoeXT5DKvfDLa/health';
+    const apiKey = process.env.AIRTABLE_KEY; // Replace with your MailerSend API key
+    const newHealthRecord = await fetch(health_url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify(formdata),
+    });
 
+var healthRecordId = newHealthRecord.healthRecordid
+console.log(healthRecordId)
 
+// STARTGoogle Apps Script 
+/*
   try {
     const apiUrl = 'https://script.google.com/macros/s/AKfycbz0yEPTZBGeGQpYSqOZ9-irRAOK4LbRxAwQrDkvpqU44MBVi_vExwRD3IRqK0QVMQXT/exec?'+qstring; // Replace with the API endpoint you want to fetch
 
@@ -47,6 +62,7 @@ if (event.httpMethod == 'POST') {
       body: JSON.stringify({ message: 'Error fetching data' }),
     };
   }
+  */ // END Google Apps Script
 
   var textbody = `name: ${formdata.fname} ${formdata.lname}\n email: ${formdata.email}\n phone: ${formdata.phone}\n`
   var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.email}<br> phone: ${formdata.phone}<br><br><a href="https://airtable.com/appBRoeXT5DKvfDLa/tblzoCa2sjvxKgiaD/viwzuaSUywHuSl7Nh/${healthRecordId}?blocks=hide">View in Database</a>` 
