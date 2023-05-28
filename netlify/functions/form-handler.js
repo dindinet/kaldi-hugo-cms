@@ -14,10 +14,13 @@ exports.handler = async function(event) {
   };
 };
 if (event.httpMethod == 'POST') {
+
   console.log('POST')
   var qstring = new URLSearchParams(event.body)
   var formdata = Object.fromEntries(qstring);
+  
   console.log(formdata)
+  
   theConditionsWeFound = [];
   for (const [key, value] of Object.entries(formdata))
    if(key.includes('cb_conditions_')){
@@ -31,12 +34,12 @@ if (event.httpMethod == 'POST') {
 // Airtable  POST
 
     var health_url = 'https://api.airtable.com/v0/appBRoeXT5DKvfDLa/health';
-    const apiKey = process.env.AIRTABLE_KEY; // Replace with your MailerSend API key
+    //const apiKey = process.env.AIRTABLE_KEY; // Replace with your MailerSend API key
     const newHealthRecord = await fetch(health_url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`,
+        'Authorization': `Bearer ${process.env.AIRTABLE_KEY}`,
       },
       body: JSON.stringify(formdata),
     });
@@ -80,13 +83,13 @@ console.log(healthRecordId)
       html: htmlbody,
     };
 
-    const apiKey = process.env.MAILERSEND_KEY; // Replace with your MailerSend API key
+    //</br>const apiKey = process.env.MAILERSEND_KEY; // Replace with your MailerSend API key
     console.log(requestBody)
     const response = await fetch(apiUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`,
+        'Authorization': `Bearer ${process.env.MAILERSEND_KEY}`,
       },
       body: JSON.stringify(requestBody),
     });
