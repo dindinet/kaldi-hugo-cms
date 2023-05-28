@@ -72,8 +72,8 @@ var healthRecordId = returnedrecord.id
   }
   */ // END Google Apps Script
 
-  var textbody = `name: ${formdata.fname} ${formdata.lname}\n email: ${formdata.email}\n phone: ${formdata.phone}\n`
-  var htmlbody = `name: ${formdata.fname} ${formdata.lname}<br> email: ${formdata.email}<br> phone: ${formdata.phone}<br><br><a href="https://airtable.com/appBRoeXT5DKvfDLa/tblzoCa2sjvxKgiaD/viwzuaSUywHuSl7Nh/${healthRecordId}?blocks=hide">View in Database</a>` 
+  var textbody = `name: ${formdata.fname} ${formdata.lname}\n email: ${formdata.email}\n phone: ${formdata.phone}\n View in database https://airtable.com/appBRoeXT5DKvfDLa/tblzoCa2sjvxKgiaD/viwzuaSUywHuSl7Nh/${healthRecordId}?blocks=hide`
+  var htmlbody = `<div><ul><li>name: ${formdata.fname} ${formdata.lname}</li><li> email: ${formdata.email}</li><li>phone: ${formdata.phone}</li></ul><p><a href="https://airtable.com/appBRoeXT5DKvfDLa/tblzoCa2sjvxKgiaD/viwzuaSUywHuSl7Nh/${healthRecordId}?blocks=hide">View in Database</a></p></div>` 
 
   //try {
 
