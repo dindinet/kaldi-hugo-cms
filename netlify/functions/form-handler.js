@@ -45,10 +45,10 @@ if (event.httpMethod == 'POST') {
       },
       body: JSON.stringify(atdata), 
     });
-console.log('Here comes the newHealthRecord id')
-//console.log(JSON.parse(newHealthRecord))
-var healthRecordId = newHealthRecord.id
-console.log(healthRecordId)
+console.log('Here comes the newHealthRecord')
+console.log(JSON.stringify(newHealthRecord))
+//var healthRecordId = newHealthRecord.id
+//console.log(healthRecordId)
 
 // STARTGoogle Apps Script 
 /*
