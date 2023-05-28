@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 
 exports.handler = async function(event) {
 
-
+// == GET ==
   if (event.httpMethod == 'GET') {
     console.log('GET')
     console.log(event.queryStringParameters);
@@ -13,6 +13,7 @@ exports.handler = async function(event) {
     },
   };
 };
+// == POST ==
 if (event.httpMethod == 'POST') {
 
   console.log('POST')
@@ -41,10 +42,11 @@ if (event.httpMethod == 'POST') {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${process.env.AIRTABLE_KEY}`,
       },
-      body: JSON.stringify(formdata),
+      body: JSON.stringify({ fields: formdata }), 
     });
 
-var healthRecordId = newHealthRecord.healthRecordid
+var returnedHealthrecord = JSON.parse(newHealthRecord)
+var healthRecordId = returnedHealthrecord.id
 console.log(healthRecordId)
 
 // STARTGoogle Apps Script 
@@ -96,24 +98,6 @@ console.log(healthRecordId)
 
    console.log(JSON.stringify(response))
    
-   //const responseData = await response.json();
-   // console.log(responseData)
-    //return {
-    //  statusCode: response.status,
-     // body: JSON.stringify(responseData),
-    //}; 
-  
-  /*
-  catch (error) {
-    console.error('Error sending email:', error);
-
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ message: 'Error sending email' }),
-    };
-  }
-  */
-  
 
 }
 
