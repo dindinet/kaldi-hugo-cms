@@ -33,7 +33,8 @@ if (event.httpMethod == 'POST') {
    console.log(JSON.stringify(formdata))
 
 // Airtable  POST
-
+    var atdata = {}
+    atdata["fields"] = formdata;
     var health_url = 'https://api.airtable.com/v0/appBRoeXT5DKvfDLa/health';
     //const apiKey = process.env.AIRTABLE_KEY; // Replace with your MailerSend API key
     const newHealthRecord = await fetch(health_url, {
@@ -42,7 +43,7 @@ if (event.httpMethod == 'POST') {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${process.env.AIRTABLE_KEY}`,
       },
-      body: JSON.stringify({ fields: formdata }), 
+      body: JSON.stringify(atdata), 
     });
 
 var returnedHealthrecord = JSON.parse(newHealthRecord)
