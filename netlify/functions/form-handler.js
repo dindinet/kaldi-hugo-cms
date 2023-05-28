@@ -49,7 +49,7 @@ if (event.httpMethod == 'POST') {
 console.log('Here comes the returnedrecord')
 console.log(JSON.stringify(returnedrecord))
 console.log(JSON.stringify(returnedrecord.id))
-//var healthRecordId = newHealthRecord.id
+var healthRecordId = returnedrecord.id
 //console.log(healthRecordId)
 
 // STARTGoogle Apps Script 
