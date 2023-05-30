@@ -73,6 +73,7 @@ pricing:
           then work on giving relief.
       plan: Up to 60 mins
       price: '40'
+      squareup: https://checkout.square.site/buy/M74IQEXOIJENESVYHWCEDAXD
     - description: A session of up to 90 minutes you can expect a full body massage.
       items:
         - >-
@@ -80,6 +81,7 @@ pricing:
           well as the major muscle groups.
       plan: Up to 90 mins
       price: '50'
+      squareup: https://checkout.square.site/buy/GRVFFJBVMB5VS3G46TK4YEI7
     - description: A massage session tailored to your specific needs.
       items:
         - >-
@@ -88,5 +90,6 @@ pricing:
           specific stiffness or pain issues.
       plan: Up to 120 mins
       price: '60'
+      squareup: https://checkout.square.site/buy/WX3XDTQY4L3QGIQHUI5H2X5F
 ---
 
